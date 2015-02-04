@@ -19,7 +19,29 @@ namespace GravenSysteem
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
+        }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if ( this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+
+            foreach (Panel pnl in this.Controls)
+            {
+                pnl.Width = this.Width;
+            }
         }
     }
 }
