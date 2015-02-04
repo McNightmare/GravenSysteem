@@ -181,3 +181,5 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+Programma/GravenSysteem/GravenSysteem/Properties/Resources.Designer.cs
+Programma/GravenSysteem/GravenSysteem/Properties/Resources.resx
