@@ -16,5 +16,10 @@ namespace GravenSysteem
         {
             InitializeComponent();
         }
+
+        private void lblPassword_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

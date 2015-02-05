@@ -66,18 +66,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -91,22 +91,25 @@
     <None Include="Resources\Resize.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Resize1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Close.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Close1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Close2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Close3.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsernameIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasswordIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasswordIcon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
