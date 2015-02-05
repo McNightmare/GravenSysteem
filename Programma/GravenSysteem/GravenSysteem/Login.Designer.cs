@@ -1,6 +1,6 @@
 ﻿namespace GravenSysteem
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,29 +29,42 @@
         private void InitializeComponent()
         {
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblLogin = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbUsername = new System.Windows.Forms.PictureBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.pbPassword = new System.Windows.Forms.PictureBox();
+            this.pnlSplashscreen = new System.Windows.Forms.Panel();
             this.pnlLogin.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPassword)).BeginInit();
+            this.pnlSplashscreen.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(149)))), ((int)(((byte)(248)))));
+            this.pnlLogin.Controls.Add(this.btnClose);
             this.pnlLogin.Controls.Add(this.lblLogin);
-            this.pnlLogin.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogin.Location = new System.Drawing.Point(13, 21);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(284, 35);
-            this.pnlLogin.TabIndex = 0;
+            this.pnlLogin.TabIndex = 4;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackgroundImage = global::GravenSysteem.Properties.Resources.Close;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Location = new System.Drawing.Point(249, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblLogin
             // 
@@ -64,22 +77,12 @@
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Graven Systeem";
             // 
-            // txtUsername
-            // 
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Roboto", 15F);
-            this.txtUsername.Location = new System.Drawing.Point(27, 3);
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(182, 25);
-            this.txtUsername.TabIndex = 1;
-            // 
             // txtPassword
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Roboto", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(65, 81);
-            this.txtPassword.Multiline = true;
+            this.txtPassword.Location = new System.Drawing.Point(78, 100);
+            this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(182, 25);
@@ -92,75 +95,75 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(38, 124);
+            this.btnLogin.Location = new System.Drawing.Point(51, 145);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(209, 28);
-            this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "LOG   IN";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // panel1
+            // pbUsername
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.txtUsername);
-            this.panel1.Location = new System.Drawing.Point(38, 47);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 28);
-            this.panel1.TabIndex = 6;
+            this.pbUsername.BackgroundImage = global::GravenSysteem.Properties.Resources.PasswordIcon1;
+            this.pbUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbUsername.Location = new System.Drawing.Point(51, 69);
+            this.pbUsername.Name = "pbUsername";
+            this.pbUsername.Size = new System.Drawing.Size(25, 25);
+            this.pbUsername.TabIndex = 8;
+            this.pbUsername.TabStop = false;
             // 
-            // panel2
+            // txtUsername
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(38, 79);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(209, 28);
-            this.panel2.TabIndex = 7;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Roboto", 15F);
+            this.txtUsername.Location = new System.Drawing.Point(78, 69);
+            this.txtUsername.MaxLength = 15;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(182, 25);
+            this.txtUsername.TabIndex = 1;
             // 
-            // pictureBox2
+            // pbPassword
             // 
-            this.pictureBox2.BackgroundImage = global::GravenSysteem.Properties.Resources.PasswordIcon;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 22);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
+            this.pbPassword.BackgroundImage = global::GravenSysteem.Properties.Resources.PasswordIcon;
+            this.pbPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbPassword.Location = new System.Drawing.Point(51, 100);
+            this.pbPassword.Name = "pbPassword";
+            this.pbPassword.Size = new System.Drawing.Size(25, 25);
+            this.pbPassword.TabIndex = 9;
+            this.pbPassword.TabStop = false;
             // 
-            // pictureBox1
+            // pnlSplashscreen
             // 
-            this.pictureBox1.BackgroundImage = global::GravenSysteem.Properties.Resources.PasswordIcon1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 22);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.pnlSplashscreen.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlSplashscreen.Controls.Add(this.btnLogin);
+            this.pnlSplashscreen.Controls.Add(this.pbPassword);
+            this.pnlSplashscreen.Controls.Add(this.pnlLogin);
+            this.pnlSplashscreen.Controls.Add(this.txtUsername);
+            this.pnlSplashscreen.Controls.Add(this.txtPassword);
+            this.pnlSplashscreen.Controls.Add(this.pbUsername);
+            this.pnlSplashscreen.Location = new System.Drawing.Point(68, 145);
+            this.pnlSplashscreen.Name = "pnlSplashscreen";
+            this.pnlSplashscreen.Size = new System.Drawing.Size(308, 198);
+            this.pnlSplashscreen.TabIndex = 10;
             // 
-            // Login
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 164);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.pnlLogin);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(440, 498);
+            this.Controls.Add(this.pnlSplashscreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPassword)).EndInit();
+            this.pnlSplashscreen.ResumeLayout(false);
+            this.pnlSplashscreen.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -168,12 +171,12 @@
 
         private System.Windows.Forms.Panel pnlLogin;
         private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbUsername;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.PictureBox pbPassword;
+        private System.Windows.Forms.Panel pnlSplashscreen;
     }
 }
