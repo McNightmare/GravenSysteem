@@ -34,18 +34,24 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlMenuBar = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Toevoegen = new System.Windows.Forms.TabPage();
+            this.Bewerken = new System.Windows.Forms.TabPage();
+            this.Verwijderen = new System.Windows.Forms.TabPage();
+            this.Zoeken = new System.Windows.Forms.TabPage();
+            this.Rapporten = new System.Windows.Forms.TabPage();
+            this.Beveiliging = new System.Windows.Forms.TabPage();
             this.pnlSeperator = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnAddGraf = new System.Windows.Forms.Button();
+            this.btnAddArtikel = new System.Windows.Forms.Button();
+            this.btnAddSubject = new System.Windows.Forms.Button();
+            this.btnAddDocument = new System.Windows.Forms.Button();
+            this.btnAddOverledenen = new System.Windows.Forms.Button();
             this.pnlFrame.SuspendLayout();
             this.pnlMenuBar.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.Toevoegen.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlFrame
@@ -111,7 +117,7 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(946, 0);
+            this.btnClose.Location = new System.Drawing.Point(946, -2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(46, 46);
             this.btnClose.TabIndex = 0;
@@ -126,6 +132,86 @@
             this.pnlMenuBar.Name = "pnlMenuBar";
             this.pnlMenuBar.Size = new System.Drawing.Size(992, 93);
             this.pnlMenuBar.TabIndex = 1;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabControl1.Controls.Add(this.Toevoegen);
+            this.tabControl1.Controls.Add(this.Bewerken);
+            this.tabControl1.Controls.Add(this.Verwijderen);
+            this.tabControl1.Controls.Add(this.Zoeken);
+            this.tabControl1.Controls.Add(this.Rapporten);
+            this.tabControl1.Controls.Add(this.Beveiliging);
+            this.tabControl1.Location = new System.Drawing.Point(-7, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1013, 100);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // Toevoegen
+            // 
+            this.Toevoegen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.Toevoegen.Controls.Add(this.btnAddOverledenen);
+            this.Toevoegen.Controls.Add(this.btnAddDocument);
+            this.Toevoegen.Controls.Add(this.btnAddSubject);
+            this.Toevoegen.Controls.Add(this.btnAddArtikel);
+            this.Toevoegen.Controls.Add(this.btnAddGraf);
+            this.Toevoegen.Location = new System.Drawing.Point(4, 25);
+            this.Toevoegen.Name = "Toevoegen";
+            this.Toevoegen.Padding = new System.Windows.Forms.Padding(3);
+            this.Toevoegen.Size = new System.Drawing.Size(1005, 71);
+            this.Toevoegen.TabIndex = 0;
+            this.Toevoegen.Text = "Toevoegen";
+            // 
+            // Bewerken
+            // 
+            this.Bewerken.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.Bewerken.Location = new System.Drawing.Point(4, 25);
+            this.Bewerken.Name = "Bewerken";
+            this.Bewerken.Padding = new System.Windows.Forms.Padding(3);
+            this.Bewerken.Size = new System.Drawing.Size(1005, 71);
+            this.Bewerken.TabIndex = 1;
+            this.Bewerken.Text = "Bewerken";
+            // 
+            // Verwijderen
+            // 
+            this.Verwijderen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.Verwijderen.Location = new System.Drawing.Point(4, 25);
+            this.Verwijderen.Name = "Verwijderen";
+            this.Verwijderen.Padding = new System.Windows.Forms.Padding(3);
+            this.Verwijderen.Size = new System.Drawing.Size(1005, 71);
+            this.Verwijderen.TabIndex = 2;
+            this.Verwijderen.Text = "Verwijderen";
+            // 
+            // Zoeken
+            // 
+            this.Zoeken.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.Zoeken.Location = new System.Drawing.Point(4, 25);
+            this.Zoeken.Name = "Zoeken";
+            this.Zoeken.Padding = new System.Windows.Forms.Padding(3);
+            this.Zoeken.Size = new System.Drawing.Size(1005, 71);
+            this.Zoeken.TabIndex = 3;
+            this.Zoeken.Text = "Zoeken";
+            // 
+            // Rapporten
+            // 
+            this.Rapporten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.Rapporten.Location = new System.Drawing.Point(4, 25);
+            this.Rapporten.Name = "Rapporten";
+            this.Rapporten.Padding = new System.Windows.Forms.Padding(3);
+            this.Rapporten.Size = new System.Drawing.Size(1005, 71);
+            this.Rapporten.TabIndex = 4;
+            this.Rapporten.Text = "Rapporten";
+            // 
+            // Beveiliging
+            // 
+            this.Beveiliging.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.Beveiliging.Location = new System.Drawing.Point(4, 25);
+            this.Beveiliging.Name = "Beveiliging";
+            this.Beveiliging.Padding = new System.Windows.Forms.Padding(3);
+            this.Beveiliging.Size = new System.Drawing.Size(1005, 71);
+            this.Beveiliging.TabIndex = 5;
+            this.Beveiliging.Text = "Beveiliging";
             // 
             // pnlSeperator
             // 
@@ -143,86 +229,67 @@
             this.panel2.Size = new System.Drawing.Size(994, 1);
             this.panel2.TabIndex = 1;
             // 
-            // tabControl1
+            // btnAddGraf
             // 
-            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(-7, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1013, 100);
-            this.tabControl1.TabIndex = 0;
+            this.btnAddGraf.FlatAppearance.BorderSize = 0;
+            this.btnAddGraf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddGraf.Location = new System.Drawing.Point(196, 11);
+            this.btnAddGraf.Name = "btnAddGraf";
+            this.btnAddGraf.Size = new System.Drawing.Size(89, 45);
+            this.btnAddGraf.TabIndex = 2;
+            this.btnAddGraf.Text = "Graf";
+            this.btnAddGraf.UseVisualStyleBackColor = true;
             // 
-            // tabPage1
+            // btnAddArtikel
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1005, 71);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.btnAddArtikel.FlatAppearance.BorderSize = 0;
+            this.btnAddArtikel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddArtikel.Location = new System.Drawing.Point(281, 11);
+            this.btnAddArtikel.Name = "btnAddArtikel";
+            this.btnAddArtikel.Size = new System.Drawing.Size(89, 45);
+            this.btnAddArtikel.TabIndex = 3;
+            this.btnAddArtikel.Text = "Artikel";
+            this.btnAddArtikel.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // btnAddSubject
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1005, 71);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.btnAddSubject.FlatAppearance.BorderSize = 0;
+            this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSubject.Location = new System.Drawing.Point(6, 11);
+            this.btnAddSubject.Name = "btnAddSubject";
+            this.btnAddSubject.Size = new System.Drawing.Size(89, 45);
+            this.btnAddSubject.TabIndex = 2;
+            this.btnAddSubject.Text = "Subject";
+            this.btnAddSubject.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // btnAddDocument
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1005, 71);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.btnAddDocument.FlatAppearance.BorderSize = 0;
+            this.btnAddDocument.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddDocument.Location = new System.Drawing.Point(376, 11);
+            this.btnAddDocument.Name = "btnAddDocument";
+            this.btnAddDocument.Size = new System.Drawing.Size(89, 45);
+            this.btnAddDocument.TabIndex = 4;
+            this.btnAddDocument.Text = "Document";
+            this.btnAddDocument.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // btnAddOverledenen
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1005, 71);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1005, 71);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1005, 71);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "tabPage6";
+            this.btnAddOverledenen.FlatAppearance.BorderSize = 0;
+            this.btnAddOverledenen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddOverledenen.Location = new System.Drawing.Point(101, 11);
+            this.btnAddOverledenen.Name = "btnAddOverledenen";
+            this.btnAddOverledenen.Size = new System.Drawing.Size(89, 45);
+            this.btnAddOverledenen.TabIndex = 2;
+            this.btnAddOverledenen.Text = "Overledenen";
+            this.btnAddOverledenen.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(992, 601);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlSeperator);
@@ -236,6 +303,7 @@
             this.pnlFrame.PerformLayout();
             this.pnlMenuBar.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.Toevoegen.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -251,12 +319,17 @@
         private System.Windows.Forms.Button btnResize;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage Bewerken;
+        private System.Windows.Forms.TabPage Toevoegen;
+        private System.Windows.Forms.TabPage Verwijderen;
+        private System.Windows.Forms.TabPage Zoeken;
+        private System.Windows.Forms.TabPage Rapporten;
+        private System.Windows.Forms.TabPage Beveiliging;
+        private System.Windows.Forms.Button btnAddGraf;
+        private System.Windows.Forms.Button btnAddDocument;
+        private System.Windows.Forms.Button btnAddSubject;
+        private System.Windows.Forms.Button btnAddArtikel;
+        private System.Windows.Forms.Button btnAddOverledenen;
     }
 }
 
