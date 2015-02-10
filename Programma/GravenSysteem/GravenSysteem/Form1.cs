@@ -64,6 +64,14 @@ namespace GravenSysteem
             foreach (Panel pnl in this.Controls)
             {
                 pnl.Width = this.Width;
+                if (pnl.Name == "pnlMain")
+                {
+                    pnl.Height = this.Height - pnl.Location.Y;
+                    foreach (Form fm in pnlMain.Controls)
+                    {
+                        fm.Height = pnl.Height;
+                    }
+                }
             }
 
             foreach (TabControl tab in pnlMenuBar.Controls)
@@ -84,6 +92,15 @@ namespace GravenSysteem
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        private void btnAddSubject_Click(object sender, EventArgs e)
+        {
+            Subject s = new Subject(pnlMain.Width, pnlMain.Height, pnlMain.Location);
+            s.TopLevel = false;
+            s.Dock = DockStyle.Fill;
+            pnlMain.Controls.Add(s);
+            s.Show();
         }
     }
 }

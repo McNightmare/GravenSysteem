@@ -36,6 +36,11 @@
             this.pnlMenuBar = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Toevoegen = new System.Windows.Forms.TabPage();
+            this.btnAddOverledenen = new System.Windows.Forms.Button();
+            this.btnAddDocument = new System.Windows.Forms.Button();
+            this.btnAddSubject = new System.Windows.Forms.Button();
+            this.btnAddArtikel = new System.Windows.Forms.Button();
+            this.btnAddGraf = new System.Windows.Forms.Button();
             this.Bewerken = new System.Windows.Forms.TabPage();
             this.Verwijderen = new System.Windows.Forms.TabPage();
             this.Zoeken = new System.Windows.Forms.TabPage();
@@ -43,11 +48,7 @@
             this.Beveiliging = new System.Windows.Forms.TabPage();
             this.pnlSeperator = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAddGraf = new System.Windows.Forms.Button();
-            this.btnAddArtikel = new System.Windows.Forms.Button();
-            this.btnAddSubject = new System.Windows.Forms.Button();
-            this.btnAddDocument = new System.Windows.Forms.Button();
-            this.btnAddOverledenen = new System.Windows.Forms.Button();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlFrame.SuspendLayout();
             this.pnlMenuBar.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -163,6 +164,62 @@
             this.Toevoegen.TabIndex = 0;
             this.Toevoegen.Text = "Toevoegen";
             // 
+            // btnAddOverledenen
+            // 
+            this.btnAddOverledenen.FlatAppearance.BorderSize = 0;
+            this.btnAddOverledenen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddOverledenen.Location = new System.Drawing.Point(101, 11);
+            this.btnAddOverledenen.Name = "btnAddOverledenen";
+            this.btnAddOverledenen.Size = new System.Drawing.Size(89, 45);
+            this.btnAddOverledenen.TabIndex = 2;
+            this.btnAddOverledenen.Text = "Overledenen";
+            this.btnAddOverledenen.UseVisualStyleBackColor = true;
+            // 
+            // btnAddDocument
+            // 
+            this.btnAddDocument.FlatAppearance.BorderSize = 0;
+            this.btnAddDocument.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddDocument.Location = new System.Drawing.Point(376, 11);
+            this.btnAddDocument.Name = "btnAddDocument";
+            this.btnAddDocument.Size = new System.Drawing.Size(89, 45);
+            this.btnAddDocument.TabIndex = 4;
+            this.btnAddDocument.Text = "Document";
+            this.btnAddDocument.UseVisualStyleBackColor = true;
+            // 
+            // btnAddSubject
+            // 
+            this.btnAddSubject.FlatAppearance.BorderSize = 0;
+            this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSubject.Location = new System.Drawing.Point(6, 11);
+            this.btnAddSubject.Name = "btnAddSubject";
+            this.btnAddSubject.Size = new System.Drawing.Size(89, 45);
+            this.btnAddSubject.TabIndex = 2;
+            this.btnAddSubject.Text = "Subject";
+            this.btnAddSubject.UseVisualStyleBackColor = true;
+            this.btnAddSubject.Click += new System.EventHandler(this.btnAddSubject_Click);
+            // 
+            // btnAddArtikel
+            // 
+            this.btnAddArtikel.FlatAppearance.BorderSize = 0;
+            this.btnAddArtikel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddArtikel.Location = new System.Drawing.Point(281, 11);
+            this.btnAddArtikel.Name = "btnAddArtikel";
+            this.btnAddArtikel.Size = new System.Drawing.Size(89, 45);
+            this.btnAddArtikel.TabIndex = 3;
+            this.btnAddArtikel.Text = "Artikel";
+            this.btnAddArtikel.UseVisualStyleBackColor = true;
+            // 
+            // btnAddGraf
+            // 
+            this.btnAddGraf.FlatAppearance.BorderSize = 0;
+            this.btnAddGraf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddGraf.Location = new System.Drawing.Point(196, 11);
+            this.btnAddGraf.Name = "btnAddGraf";
+            this.btnAddGraf.Size = new System.Drawing.Size(89, 45);
+            this.btnAddGraf.TabIndex = 2;
+            this.btnAddGraf.Text = "Graf";
+            this.btnAddGraf.UseVisualStyleBackColor = true;
+            // 
             // Bewerken
             // 
             this.Bewerken.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
@@ -229,60 +286,13 @@
             this.panel2.Size = new System.Drawing.Size(994, 1);
             this.panel2.TabIndex = 1;
             // 
-            // btnAddGraf
+            // pnlMain
             // 
-            this.btnAddGraf.FlatAppearance.BorderSize = 0;
-            this.btnAddGraf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddGraf.Location = new System.Drawing.Point(196, 11);
-            this.btnAddGraf.Name = "btnAddGraf";
-            this.btnAddGraf.Size = new System.Drawing.Size(89, 45);
-            this.btnAddGraf.TabIndex = 2;
-            this.btnAddGraf.Text = "Graf";
-            this.btnAddGraf.UseVisualStyleBackColor = true;
-            // 
-            // btnAddArtikel
-            // 
-            this.btnAddArtikel.FlatAppearance.BorderSize = 0;
-            this.btnAddArtikel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddArtikel.Location = new System.Drawing.Point(281, 11);
-            this.btnAddArtikel.Name = "btnAddArtikel";
-            this.btnAddArtikel.Size = new System.Drawing.Size(89, 45);
-            this.btnAddArtikel.TabIndex = 3;
-            this.btnAddArtikel.Text = "Artikel";
-            this.btnAddArtikel.UseVisualStyleBackColor = true;
-            // 
-            // btnAddSubject
-            // 
-            this.btnAddSubject.FlatAppearance.BorderSize = 0;
-            this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddSubject.Location = new System.Drawing.Point(6, 11);
-            this.btnAddSubject.Name = "btnAddSubject";
-            this.btnAddSubject.Size = new System.Drawing.Size(89, 45);
-            this.btnAddSubject.TabIndex = 2;
-            this.btnAddSubject.Text = "Subject";
-            this.btnAddSubject.UseVisualStyleBackColor = true;
-            // 
-            // btnAddDocument
-            // 
-            this.btnAddDocument.FlatAppearance.BorderSize = 0;
-            this.btnAddDocument.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddDocument.Location = new System.Drawing.Point(376, 11);
-            this.btnAddDocument.Name = "btnAddDocument";
-            this.btnAddDocument.Size = new System.Drawing.Size(89, 45);
-            this.btnAddDocument.TabIndex = 4;
-            this.btnAddDocument.Text = "Document";
-            this.btnAddDocument.UseVisualStyleBackColor = true;
-            // 
-            // btnAddOverledenen
-            // 
-            this.btnAddOverledenen.FlatAppearance.BorderSize = 0;
-            this.btnAddOverledenen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddOverledenen.Location = new System.Drawing.Point(101, 11);
-            this.btnAddOverledenen.Name = "btnAddOverledenen";
-            this.btnAddOverledenen.Size = new System.Drawing.Size(89, 45);
-            this.btnAddOverledenen.TabIndex = 2;
-            this.btnAddOverledenen.Text = "Overledenen";
-            this.btnAddOverledenen.UseVisualStyleBackColor = true;
+            this.pnlMain.AutoSize = true;
+            this.pnlMain.Location = new System.Drawing.Point(0, 139);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(992, 462);
+            this.pnlMain.TabIndex = 2;
             // 
             // frmMain
             // 
@@ -291,6 +301,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(992, 601);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlSeperator);
             this.Controls.Add(this.pnlMenuBar);
@@ -305,6 +316,7 @@
             this.tabControl1.ResumeLayout(false);
             this.Toevoegen.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -330,6 +342,7 @@
         private System.Windows.Forms.Button btnAddSubject;
         private System.Windows.Forms.Button btnAddArtikel;
         private System.Windows.Forms.Button btnAddOverledenen;
+        private System.Windows.Forms.Panel pnlMain;
     }
 }
 
