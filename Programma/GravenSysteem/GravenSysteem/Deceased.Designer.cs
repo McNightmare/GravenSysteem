@@ -65,25 +65,25 @@
             this.txtBoxNameInterested = new System.Windows.Forms.TextBox();
             this.lblNameInterested = new System.Windows.Forms.Label();
             this.groupBoxFuneral = new System.Windows.Forms.GroupBox();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.lblType = new System.Windows.Forms.Label();
-            this.lblFuneralDate = new System.Windows.Forms.Label();
-            this.lblFuneralTime = new System.Windows.Forms.Label();
-            this.lblStartDate = new System.Windows.Forms.Label();
-            this.lblDateRequest = new System.Windows.Forms.Label();
-            this.lblDateCulling = new System.Windows.Forms.Label();
-            this.lblDateDeliver = new System.Windows.Forms.Label();
-            this.lblExpiration = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBoxYearlyMaintainance = new System.Windows.Forms.CheckBox();
-            this.dateTimeDateRequest = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeStartDate = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeTimeFuneral = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeDateFuneral = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeDeliver = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeCulling = new System.Windows.Forms.DateTimePicker();
             this.dateTimeExpiration = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeCulling = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeDeliver = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeDateFuneral = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeTimeFuneral = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeStartDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeDateRequest = new System.Windows.Forms.DateTimePicker();
+            this.checkBoxYearlyMaintainance = new System.Windows.Forms.CheckBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblExpiration = new System.Windows.Forms.Label();
+            this.lblDateDeliver = new System.Windows.Forms.Label();
+            this.lblDateCulling = new System.Windows.Forms.Label();
+            this.lblDateRequest = new System.Windows.Forms.Label();
+            this.lblStartDate = new System.Windows.Forms.Label();
+            this.lblFuneralTime = new System.Windows.Forms.Label();
+            this.lblFuneralDate = new System.Windows.Forms.Label();
+            this.lblType = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.groupBoxDeceased.SuspendLayout();
             this.groupBoxGrave.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -103,6 +103,7 @@
             this.groupBoxDeceased.Controls.Add(this.lblDate);
             this.groupBoxDeceased.Controls.Add(this.txtBoxName);
             this.groupBoxDeceased.Controls.Add(this.lblName);
+            this.groupBoxDeceased.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxDeceased.Location = new System.Drawing.Point(12, 12);
             this.groupBoxDeceased.Name = "groupBoxDeceased";
             this.groupBoxDeceased.Size = new System.Drawing.Size(968, 48);
@@ -113,6 +114,7 @@
             // txtBoxAge
             // 
             this.txtBoxAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBoxAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxAge.Location = new System.Drawing.Point(885, 18);
             this.txtBoxAge.Name = "txtBoxAge";
             this.txtBoxAge.Size = new System.Drawing.Size(32, 20);
@@ -172,6 +174,7 @@
             // txtBoxName
             // 
             this.txtBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxName.Location = new System.Drawing.Point(47, 18);
             this.txtBoxName.Name = "txtBoxName";
             this.txtBoxName.Size = new System.Drawing.Size(478, 20);
@@ -213,6 +216,7 @@
             this.groupBoxGrave.Controls.Add(this.lblGraveType);
             this.groupBoxGrave.Controls.Add(this.cbBoxBurial);
             this.groupBoxGrave.Controls.Add(this.lblBurial);
+            this.groupBoxGrave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxGrave.Location = new System.Drawing.Point(12, 66);
             this.groupBoxGrave.Name = "groupBoxGrave";
             this.groupBoxGrave.Size = new System.Drawing.Size(565, 384);
@@ -225,6 +229,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(9, 173);
             this.dataGridView1.Name = "dataGridView1";
@@ -241,6 +246,7 @@
             // 
             // txtBoxClaimant
             // 
+            this.txtBoxClaimant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxClaimant.Location = new System.Drawing.Point(454, 77);
             this.txtBoxClaimant.Name = "txtBoxClaimant";
             this.txtBoxClaimant.Size = new System.Drawing.Size(100, 20);
@@ -248,6 +254,7 @@
             // 
             // txtBoxTypeLocation
             // 
+            this.txtBoxTypeLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxTypeLocation.Location = new System.Drawing.Point(454, 51);
             this.txtBoxTypeLocation.Name = "txtBoxTypeLocation";
             this.txtBoxTypeLocation.Size = new System.Drawing.Size(100, 20);
@@ -255,6 +262,7 @@
             // 
             // txtBoxDifferentLocation
             // 
+            this.txtBoxDifferentLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxDifferentLocation.Location = new System.Drawing.Point(454, 25);
             this.txtBoxDifferentLocation.Name = "txtBoxDifferentLocation";
             this.txtBoxDifferentLocation.Size = new System.Drawing.Size(100, 20);
@@ -298,6 +306,7 @@
             // 
             // txtBoxRecognize
             // 
+            this.txtBoxRecognize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxRecognize.Location = new System.Drawing.Point(116, 132);
             this.txtBoxRecognize.Name = "txtBoxRecognize";
             this.txtBoxRecognize.Size = new System.Drawing.Size(111, 20);
@@ -356,6 +365,7 @@
             // 
             // txtBoxPosition
             // 
+            this.txtBoxPosition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxPosition.Location = new System.Drawing.Point(282, 51);
             this.txtBoxPosition.Name = "txtBoxPosition";
             this.txtBoxPosition.Size = new System.Drawing.Size(85, 20);
@@ -381,6 +391,7 @@
             // 
             // txtBoxGraveType
             // 
+            this.txtBoxGraveType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxGraveType.Location = new System.Drawing.Point(106, 52);
             this.txtBoxGraveType.Name = "txtBoxGraveType";
             this.txtBoxGraveType.Size = new System.Drawing.Size(121, 20);
@@ -420,6 +431,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxInterested.Controls.Add(this.txtBoxNameInterested);
             this.groupBoxInterested.Controls.Add(this.lblNameInterested);
+            this.groupBoxInterested.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxInterested.Location = new System.Drawing.Point(583, 66);
             this.groupBoxInterested.Name = "groupBoxInterested";
             this.groupBoxInterested.Size = new System.Drawing.Size(397, 59);
@@ -431,6 +443,7 @@
             // 
             this.txtBoxNameInterested.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBoxNameInterested.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxNameInterested.Location = new System.Drawing.Point(54, 25);
             this.txtBoxNameInterested.Name = "txtBoxNameInterested";
             this.txtBoxNameInterested.Size = new System.Drawing.Size(337, 20);
@@ -469,6 +482,7 @@
             this.groupBoxFuneral.Controls.Add(this.lblFuneralDate);
             this.groupBoxFuneral.Controls.Add(this.lblType);
             this.groupBoxFuneral.Controls.Add(this.lblStatus);
+            this.groupBoxFuneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxFuneral.Location = new System.Drawing.Point(583, 131);
             this.groupBoxFuneral.Name = "groupBoxFuneral";
             this.groupBoxFuneral.Size = new System.Drawing.Size(397, 319);
@@ -476,120 +490,75 @@
             this.groupBoxFuneral.TabStop = false;
             this.groupBoxFuneral.Text = "Begrafenis/Crematie";
             // 
-            // lblStatus
+            // dateTimeExpiration
             // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(6, 31);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(37, 13);
-            this.lblStatus.TabIndex = 1;
-            this.lblStatus.Text = "Status";
-            // 
-            // lblType
-            // 
-            this.lblType.AutoSize = true;
-            this.lblType.Location = new System.Drawing.Point(6, 57);
-            this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(32, 13);
-            this.lblType.TabIndex = 2;
-            this.lblType.Text = "Soort";
-            // 
-            // lblFuneralDate
-            // 
-            this.lblFuneralDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dateTimeExpiration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblFuneralDate.AutoSize = true;
-            this.lblFuneralDate.Location = new System.Drawing.Point(9, 114);
-            this.lblFuneralDate.Name = "lblFuneralDate";
-            this.lblFuneralDate.Size = new System.Drawing.Size(135, 13);
-            this.lblFuneralDate.TabIndex = 3;
-            this.lblFuneralDate.Text = "Datum begrafenis/crematie";
+            this.dateTimeExpiration.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeExpiration.Location = new System.Drawing.Point(150, 264);
+            this.dateTimeExpiration.Name = "dateTimeExpiration";
+            this.dateTimeExpiration.Size = new System.Drawing.Size(104, 20);
+            this.dateTimeExpiration.TabIndex = 19;
             // 
-            // lblFuneralTime
+            // dateTimeCulling
             // 
-            this.lblFuneralTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dateTimeCulling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblFuneralTime.AutoSize = true;
-            this.lblFuneralTime.Location = new System.Drawing.Point(23, 140);
-            this.lblFuneralTime.Name = "lblFuneralTime";
-            this.lblFuneralTime.Size = new System.Drawing.Size(121, 13);
-            this.lblFuneralTime.TabIndex = 4;
-            this.lblFuneralTime.Text = "Tijd begrafenis/crematie";
+            this.dateTimeCulling.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeCulling.Location = new System.Drawing.Point(150, 212);
+            this.dateTimeCulling.Name = "dateTimeCulling";
+            this.dateTimeCulling.Size = new System.Drawing.Size(104, 20);
+            this.dateTimeCulling.TabIndex = 18;
             // 
-            // lblStartDate
+            // dateTimeDeliver
             // 
-            this.lblStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dateTimeDeliver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblStartDate.AutoSize = true;
-            this.lblStartDate.Location = new System.Drawing.Point(30, 166);
-            this.lblStartDate.Name = "lblStartDate";
-            this.lblStartDate.Size = new System.Drawing.Size(114, 13);
-            this.lblStartDate.TabIndex = 5;
-            this.lblStartDate.Text = "Begindatum graftermijn";
+            this.dateTimeDeliver.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeDeliver.Location = new System.Drawing.Point(150, 238);
+            this.dateTimeDeliver.Name = "dateTimeDeliver";
+            this.dateTimeDeliver.Size = new System.Drawing.Size(104, 20);
+            this.dateTimeDeliver.TabIndex = 17;
             // 
-            // lblDateRequest
+            // dateTimeDateFuneral
             // 
-            this.lblDateRequest.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dateTimeDateFuneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDateRequest.AutoSize = true;
-            this.lblDateRequest.Location = new System.Drawing.Point(58, 192);
-            this.lblDateRequest.Name = "lblDateRequest";
-            this.lblDateRequest.Size = new System.Drawing.Size(86, 13);
-            this.lblDateRequest.TabIndex = 6;
-            this.lblDateRequest.Text = "Datum aanvraag";
+            this.dateTimeDateFuneral.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeDateFuneral.Location = new System.Drawing.Point(150, 108);
+            this.dateTimeDateFuneral.Name = "dateTimeDateFuneral";
+            this.dateTimeDateFuneral.Size = new System.Drawing.Size(104, 20);
+            this.dateTimeDateFuneral.TabIndex = 16;
             // 
-            // lblDateCulling
+            // dateTimeTimeFuneral
             // 
-            this.lblDateCulling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dateTimeTimeFuneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDateCulling.AutoSize = true;
-            this.lblDateCulling.Location = new System.Drawing.Point(70, 218);
-            this.lblDateCulling.Name = "lblDateCulling";
-            this.lblDateCulling.Size = new System.Drawing.Size(74, 13);
-            this.lblDateCulling.TabIndex = 7;
-            this.lblDateCulling.Text = "Datum ruiming";
+            this.dateTimeTimeFuneral.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimeTimeFuneral.Location = new System.Drawing.Point(150, 134);
+            this.dateTimeTimeFuneral.Name = "dateTimeTimeFuneral";
+            this.dateTimeTimeFuneral.Size = new System.Drawing.Size(104, 20);
+            this.dateTimeTimeFuneral.TabIndex = 15;
             // 
-            // lblDateDeliver
+            // dateTimeStartDate
             // 
-            this.lblDateDeliver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dateTimeStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDateDeliver.AutoSize = true;
-            this.lblDateDeliver.Location = new System.Drawing.Point(74, 244);
-            this.lblDateDeliver.Name = "lblDateDeliver";
-            this.lblDateDeliver.Size = new System.Drawing.Size(70, 13);
-            this.lblDateDeliver.TabIndex = 8;
-            this.lblDateDeliver.Text = "Datum afgifte";
+            this.dateTimeStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeStartDate.Location = new System.Drawing.Point(150, 160);
+            this.dateTimeStartDate.Name = "dateTimeStartDate";
+            this.dateTimeStartDate.Size = new System.Drawing.Size(104, 20);
+            this.dateTimeStartDate.TabIndex = 14;
             // 
-            // lblExpiration
+            // dateTimeDateRequest
             // 
-            this.lblExpiration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dateTimeDateRequest.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblExpiration.AutoSize = true;
-            this.lblExpiration.Location = new System.Drawing.Point(30, 270);
-            this.lblExpiration.Name = "lblExpiration";
-            this.lblExpiration.Size = new System.Drawing.Size(117, 13);
-            this.lblExpiration.TabIndex = 9;
-            this.lblExpiration.Text = "Vervaldatum graftermijn";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(65, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(326, 21);
-            this.comboBox1.TabIndex = 10;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(65, 54);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(326, 21);
-            this.comboBox2.TabIndex = 11;
+            this.dateTimeDateRequest.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeDateRequest.Location = new System.Drawing.Point(150, 186);
+            this.dateTimeDateRequest.Name = "dateTimeDateRequest";
+            this.dateTimeDateRequest.Size = new System.Drawing.Size(104, 20);
+            this.dateTimeDateRequest.TabIndex = 13;
             // 
             // checkBoxYearlyMaintainance
             // 
@@ -602,81 +571,126 @@
             this.checkBoxYearlyMaintainance.Text = "Jaarlijks onderhoud";
             this.checkBoxYearlyMaintainance.UseVisualStyleBackColor = true;
             // 
-            // dateTimeDateRequest
+            // comboBox2
             // 
-            this.dateTimeDateRequest.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeDateRequest.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeDateRequest.Location = new System.Drawing.Point(150, 186);
-            this.dateTimeDateRequest.Name = "dateTimeDateRequest";
-            this.dateTimeDateRequest.Size = new System.Drawing.Size(104, 20);
-            this.dateTimeDateRequest.TabIndex = 13;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(65, 54);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(326, 21);
+            this.comboBox2.TabIndex = 11;
             // 
-            // dateTimeStartDate
+            // comboBox1
             // 
-            this.dateTimeStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeStartDate.Location = new System.Drawing.Point(150, 160);
-            this.dateTimeStartDate.Name = "dateTimeStartDate";
-            this.dateTimeStartDate.Size = new System.Drawing.Size(104, 20);
-            this.dateTimeStartDate.TabIndex = 14;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(65, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(326, 21);
+            this.comboBox1.TabIndex = 10;
             // 
-            // dateTimeTimeFuneral
+            // lblExpiration
             // 
-            this.dateTimeTimeFuneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblExpiration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeTimeFuneral.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimeTimeFuneral.Location = new System.Drawing.Point(150, 134);
-            this.dateTimeTimeFuneral.Name = "dateTimeTimeFuneral";
-            this.dateTimeTimeFuneral.Size = new System.Drawing.Size(104, 20);
-            this.dateTimeTimeFuneral.TabIndex = 15;
+            this.lblExpiration.AutoSize = true;
+            this.lblExpiration.Location = new System.Drawing.Point(30, 270);
+            this.lblExpiration.Name = "lblExpiration";
+            this.lblExpiration.Size = new System.Drawing.Size(117, 13);
+            this.lblExpiration.TabIndex = 9;
+            this.lblExpiration.Text = "Vervaldatum graftermijn";
             // 
-            // dateTimeDateFuneral
+            // lblDateDeliver
             // 
-            this.dateTimeDateFuneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblDateDeliver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeDateFuneral.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeDateFuneral.Location = new System.Drawing.Point(150, 108);
-            this.dateTimeDateFuneral.Name = "dateTimeDateFuneral";
-            this.dateTimeDateFuneral.Size = new System.Drawing.Size(104, 20);
-            this.dateTimeDateFuneral.TabIndex = 16;
+            this.lblDateDeliver.AutoSize = true;
+            this.lblDateDeliver.Location = new System.Drawing.Point(74, 244);
+            this.lblDateDeliver.Name = "lblDateDeliver";
+            this.lblDateDeliver.Size = new System.Drawing.Size(70, 13);
+            this.lblDateDeliver.TabIndex = 8;
+            this.lblDateDeliver.Text = "Datum afgifte";
             // 
-            // dateTimeDeliver
+            // lblDateCulling
             // 
-            this.dateTimeDeliver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblDateCulling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeDeliver.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeDeliver.Location = new System.Drawing.Point(150, 238);
-            this.dateTimeDeliver.Name = "dateTimeDeliver";
-            this.dateTimeDeliver.Size = new System.Drawing.Size(104, 20);
-            this.dateTimeDeliver.TabIndex = 17;
+            this.lblDateCulling.AutoSize = true;
+            this.lblDateCulling.Location = new System.Drawing.Point(70, 218);
+            this.lblDateCulling.Name = "lblDateCulling";
+            this.lblDateCulling.Size = new System.Drawing.Size(74, 13);
+            this.lblDateCulling.TabIndex = 7;
+            this.lblDateCulling.Text = "Datum ruiming";
             // 
-            // dateTimeCulling
+            // lblDateRequest
             // 
-            this.dateTimeCulling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblDateRequest.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeCulling.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeCulling.Location = new System.Drawing.Point(150, 212);
-            this.dateTimeCulling.Name = "dateTimeCulling";
-            this.dateTimeCulling.Size = new System.Drawing.Size(104, 20);
-            this.dateTimeCulling.TabIndex = 18;
+            this.lblDateRequest.AutoSize = true;
+            this.lblDateRequest.Location = new System.Drawing.Point(58, 192);
+            this.lblDateRequest.Name = "lblDateRequest";
+            this.lblDateRequest.Size = new System.Drawing.Size(86, 13);
+            this.lblDateRequest.TabIndex = 6;
+            this.lblDateRequest.Text = "Datum aanvraag";
             // 
-            // dateTimeExpiration
+            // lblStartDate
             // 
-            this.dateTimeExpiration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeExpiration.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeExpiration.Location = new System.Drawing.Point(150, 264);
-            this.dateTimeExpiration.Name = "dateTimeExpiration";
-            this.dateTimeExpiration.Size = new System.Drawing.Size(104, 20);
-            this.dateTimeExpiration.TabIndex = 19;
+            this.lblStartDate.AutoSize = true;
+            this.lblStartDate.Location = new System.Drawing.Point(30, 166);
+            this.lblStartDate.Name = "lblStartDate";
+            this.lblStartDate.Size = new System.Drawing.Size(114, 13);
+            this.lblStartDate.TabIndex = 5;
+            this.lblStartDate.Text = "Begindatum graftermijn";
+            // 
+            // lblFuneralTime
+            // 
+            this.lblFuneralTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFuneralTime.AutoSize = true;
+            this.lblFuneralTime.Location = new System.Drawing.Point(23, 140);
+            this.lblFuneralTime.Name = "lblFuneralTime";
+            this.lblFuneralTime.Size = new System.Drawing.Size(121, 13);
+            this.lblFuneralTime.TabIndex = 4;
+            this.lblFuneralTime.Text = "Tijd begrafenis/crematie";
+            // 
+            // lblFuneralDate
+            // 
+            this.lblFuneralDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFuneralDate.AutoSize = true;
+            this.lblFuneralDate.Location = new System.Drawing.Point(9, 114);
+            this.lblFuneralDate.Name = "lblFuneralDate";
+            this.lblFuneralDate.Size = new System.Drawing.Size(135, 13);
+            this.lblFuneralDate.TabIndex = 3;
+            this.lblFuneralDate.Text = "Datum begrafenis/crematie";
+            // 
+            // lblType
+            // 
+            this.lblType.AutoSize = true;
+            this.lblType.Location = new System.Drawing.Point(6, 57);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(32, 13);
+            this.lblType.TabIndex = 2;
+            this.lblType.Text = "Soort";
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(6, 31);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(37, 13);
+            this.lblStatus.TabIndex = 1;
+            this.lblStatus.Text = "Status";
             // 
             // Deceased
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(992, 462);
             this.Controls.Add(this.groupBoxFuneral);
             this.Controls.Add(this.groupBoxInterested);
