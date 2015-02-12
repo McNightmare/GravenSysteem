@@ -99,19 +99,8 @@ namespace GravenSysteem
             Subject s = new Subject(pnlMain.Width, pnlMain.Height, pnlMain.Location);
             s.TopLevel = false;
             s.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
             pnlMain.Controls.Add(s);
             s.Show();
-        }
-
-        private void btnAddGraf_Click(object sender, EventArgs e)
-        {
-            frmAddGraf Graf = new frmAddGraf(pnlMain.Width, pnlMain.Height, pnlMain.Location);
-            Graf.TopLevel = false;
-            Graf.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(Graf);
-            Graf.Show();
         }
     }
 }
