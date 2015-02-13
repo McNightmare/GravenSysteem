@@ -104,7 +104,7 @@ namespace GravenSysteem
             s.Show();
         }
 
-        private void btnAddGraf_Click(object sender, EventArgs e)
+        private void btnAddDeceased_Click(object sender, EventArgs e)
         {
             Deceased d = new Deceased(pnlMain.Width, pnlMain.Height, pnlMain.Location);
             d.TopLevel = false;

@@ -174,7 +174,7 @@
             this.btnAddOverledenen.TabIndex = 2;
             this.btnAddOverledenen.Text = "Overledenen";
             this.btnAddOverledenen.UseVisualStyleBackColor = true;
-            this.btnAddOverledenen.Click += new System.EventHandler(this.btnAddOverledenen_Click);
+            this.btnAddOverledenen.Click += new System.EventHandler(this.btnAddDeceased_Click);
             // 
             // btnAddDocument
             // 
