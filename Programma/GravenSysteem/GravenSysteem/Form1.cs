@@ -106,12 +106,12 @@ namespace GravenSysteem
 
         private void btnAddGraf_Click(object sender, EventArgs e)
         {
-            frmAddGraf Graf = new frmAddGraf(pnlMain.Width, pnlMain.Height, pnlMain.Location);
-            Graf.TopLevel = false;
-            Graf.Dock = DockStyle.Fill;
+            Deceased d = new Deceased(pnlMain.Width, pnlMain.Height, pnlMain.Location);
+            d.TopLevel = false;
+            d.Dock = DockStyle.Fill;
             pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(Graf);
-            Graf.Show();
+            pnlMain.Controls.Add(d);
+            d.Show();
         }
     }
 }
