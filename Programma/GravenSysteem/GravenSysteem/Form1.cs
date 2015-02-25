@@ -96,22 +96,12 @@ namespace GravenSysteem
 
         private void btnAddSubject_Click(object sender, EventArgs e)
         {
-            Subject s = new Subject(pnlMain.Width, pnlMain.Height, pnlMain.Location);
+            frmSubject s = new frmSubject(pnlMain.Width, pnlMain.Height, pnlMain.Location);
             s.TopLevel = false;
             s.Dock = DockStyle.Fill;
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(s);
             s.Show();
-        }
-
-        private void btnAddDeceased_Click(object sender, EventArgs e)
-        {
-            Deceased d = new Deceased(pnlMain.Width, pnlMain.Height, pnlMain.Location);
-            d.TopLevel = false;
-            d.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(d);
-            d.Show();
         }
     }
 }
