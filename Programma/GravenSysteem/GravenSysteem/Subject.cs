@@ -18,7 +18,7 @@ namespace GravenSysteem
 
         public frmSubject()
         {
-        InitializeComponent();
+            InitializeComponent();
         }
 
         public frmSubject(int width, int height, Point location)
