@@ -19,6 +19,8 @@ namespace GravenSysteem
         public frmSubject()
         {
             InitializeComponent();
+
+
         }
 
         public frmSubject(int width, int height, Point location)
@@ -34,6 +36,19 @@ namespace GravenSysteem
             this.Width = width;
             this.Height = height;
             this.Location = location;
+        }
+
+        private void cmbSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSubject.SelectedItem.ToString() == "Overledene")
+            {
+                AddDeceased Dec = new AddDeceased(pnlSubject.Width, pnlSubject.Height, pnlSubject.Location);
+                Dec.TopLevel = false;
+                Dec.Dock = DockStyle.Fill;
+                pnlSubject.Controls.Clear();
+                pnlSubject.Controls.Add(Dec);
+                Dec.Show();
+            }
         }
     }
 }
