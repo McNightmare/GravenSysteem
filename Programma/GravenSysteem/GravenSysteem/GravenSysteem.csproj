@@ -51,6 +51,12 @@
     <Compile Include="AddDeceased.Designer.cs">
       <DependentUpon>AddDeceased.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddGrave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGrave.Designer.cs">
+      <DependentUpon>AddGrave.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </Compile>
     <EmbeddedResource Include="AddDeceased.resx">
       <DependentUpon>AddDeceased.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGrave.resx">
+      <DependentUpon>AddGrave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

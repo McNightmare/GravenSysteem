@@ -49,6 +49,15 @@ namespace GravenSysteem
                 pnlSubject.Controls.Add(Dec);
                 Dec.Show();
             }
+            if (cmbSubject.SelectedItem.ToString() == "Begraafplaats")
+            {
+                frmAddGrave addGrave = new frmAddGrave(pnlSubject.Width, pnlSubject.Height, pnlSubject.Location);
+                addGrave.TopLevel = false;
+                addGrave.Dock = DockStyle.Fill;
+                pnlSubject.Controls.Clear();
+                pnlSubject.Controls.Add(addGrave);
+                addGrave.Show();
+            }
         }
     }
 }
