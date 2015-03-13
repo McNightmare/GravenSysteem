@@ -1,6 +1,6 @@
 ﻿namespace GravenSysteem
 {
-    partial class AddGrave
+    partial class Addfuneralentrepreneur
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "AddGrave";
+            this.Text = "Addfuneralentrepreneur";
         }
 
         #endregion

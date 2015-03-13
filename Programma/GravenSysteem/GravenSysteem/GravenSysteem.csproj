@@ -51,11 +51,29 @@
     <Compile Include="AddDeceased.Designer.cs">
       <DependentUpon>AddDeceased.cs</DependentUpon>
     </Compile>
+    <Compile Include="Addfuneralentrepreneur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addfuneralentrepreneur.Designer.cs">
+      <DependentUpon>Addfuneralentrepreneur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGrave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGrave.Designer.cs">
+      <DependentUpon>AddGrave.cs</DependentUpon>
+    </Compile>
     <Compile Include="addLeverancier.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addLeverancier.Designer.cs">
       <DependentUpon>addLeverancier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addrightfulclaimant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addrightfulclaimant.Designer.cs">
+      <DependentUpon>Addrightfulclaimant.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -79,6 +97,9 @@
     </Compile>
     <EmbeddedResource Include="AddDeceased.resx">
       <DependentUpon>AddDeceased.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGrave.resx">
+      <DependentUpon>AddGrave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addLeverancier.resx">
       <DependentUpon>addLeverancier.cs</DependentUpon>

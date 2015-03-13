@@ -10,19 +10,20 @@ using System.Windows.Forms;
 
 namespace GravenSysteem
 {
-    public partial class AddGrave : Form
+    public partial class Addrightfulclaimant : Form
     {
+
         int width;
         int height;
         Point location;
-        public AddGrave(int width, int height, Point location)
+        public Addrightfulclaimant(int width, int height, Point location)
         {
             this.width = width;
             this.height = height;
             this.location = location;
             InitializeComponent();
         }
-        private void AddGrave_Load(object sender, EventArgs e)
+        private void Addrightfulclaimant_Load(object sender, EventArgs e)
         {
             this.Width = width;
             this.Height = height;

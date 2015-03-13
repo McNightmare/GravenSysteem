@@ -59,6 +59,33 @@ namespace GravenSysteem
                 pnlSubject.Controls.Add(lev);
                 lev.Show();
                 break;
+
+                case"Begraafplaats":
+                AddGrave Grave= new AddGrave(pnlSubject.Width, pnlSubject.Height, pnlSubject.Location);
+                Grave.TopLevel = false;
+                Grave.Dock = DockStyle.Fill;
+                pnlSubject.Controls.Clear();
+                pnlSubject.Controls.Add(Grave);
+                Grave.Show();
+                break;
+
+                case "BegrafenisOndernemer":
+                Addfuneralentrepreneur Addfun= new Addfuneralentrepreneur(pnlSubject.Width, pnlSubject.Height, pnlSubject.Location);
+                Addfun.TopLevel = false;
+                Addfun.Dock = DockStyle.Fill;
+                pnlSubject.Controls.Clear();
+                pnlSubject.Controls.Add(Addfun);
+                Addfun.Show();
+                break;
+
+                case"Rechthebbende":
+                Addrightfulclaimant Addrig= new Addrightfulclaimant(pnlSubject.Width, pnlSubject.Height, pnlSubject.Location);
+                Addrig.TopLevel = false;
+                Addrig.Dock = DockStyle.Fill;
+                pnlSubject.Controls.Clear();
+                pnlSubject.Controls.Add(Addrig);
+                Addrig.Show();
+                break;
             }
         }
     }
