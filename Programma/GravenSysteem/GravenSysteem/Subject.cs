@@ -40,14 +40,25 @@ namespace GravenSysteem
 
         private void cmbSubject_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbSubject.SelectedItem.ToString() == "Overledene")
+            switch(cmbSubject.SelectedItem.ToString())
             {
+                case"Overledene":
                 AddDeceased Dec = new AddDeceased(pnlSubject.Width, pnlSubject.Height, pnlSubject.Location);
                 Dec.TopLevel = false;
                 Dec.Dock = DockStyle.Fill;
                 pnlSubject.Controls.Clear();
                 pnlSubject.Controls.Add(Dec);
                 Dec.Show();
+                break;
+
+                case"Leverancier":
+                addLeverancier lev= new addLeverancier(pnlSubject.Width, pnlSubject.Height, pnlSubject.Location);
+                lev.TopLevel = false;
+                lev.Dock = DockStyle.Fill;
+                pnlSubject.Controls.Clear();
+                pnlSubject.Controls.Add(lev);
+                lev.Show();
+                break;
             }
         }
     }
