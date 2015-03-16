@@ -58,6 +58,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,15 +128,15 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(511, 130);
+            this.textBox8.Location = new System.Drawing.Point(507, 131);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(53, 20);
+            this.textBox8.Size = new System.Drawing.Size(36, 20);
             this.textBox8.TabIndex = 73;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(425, 133);
+            this.label10.Location = new System.Drawing.Point(421, 134);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 13);
             this.label10.TabIndex = 72;
@@ -282,26 +283,40 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(673, 52);
+            this.dataGridView1.Location = new System.Drawing.Point(614, 52);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(224, 264);
+            this.dataGridView1.Size = new System.Drawing.Size(317, 264);
             this.dataGridView1.TabIndex = 94;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(673, 26);
+            this.textBox4.Location = new System.Drawing.Point(725, 26);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(224, 20);
+            this.textBox4.Size = new System.Drawing.Size(206, 20);
             this.textBox4.TabIndex = 95;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(589, 29);
+            this.label4.Location = new System.Drawing.Point(540, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 13);
             this.label4.TabIndex = 96;
             this.label4.Text = "Overledenen";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Postcode ",
+            "Straat",
+            "Naam",
+            "BSN/Sofi-nummer"});
+            this.comboBox1.Location = new System.Drawing.Point(614, 26);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(105, 21);
+            this.comboBox1.TabIndex = 97;
             // 
             // Addrightfulclaimant
             // 
@@ -309,6 +324,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(976, 385);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.dataGridView1);
@@ -380,5 +396,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

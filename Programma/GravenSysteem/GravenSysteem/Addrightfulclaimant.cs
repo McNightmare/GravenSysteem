@@ -29,5 +29,10 @@ namespace GravenSysteem
             this.Height = height;
             this.Location = location;
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
