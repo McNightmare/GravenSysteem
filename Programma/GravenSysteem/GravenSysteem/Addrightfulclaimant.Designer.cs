@@ -128,7 +128,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(507, 131);
+            this.textBox8.Location = new System.Drawing.Point(504, 131);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(36, 20);
             this.textBox8.TabIndex = 73;
@@ -168,7 +168,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(438, 106);
+            this.checkBox1.Location = new System.Drawing.Point(424, 106);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(81, 17);
             this.checkBox1.TabIndex = 68;
@@ -283,40 +283,44 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(614, 52);
+            this.dataGridView1.Location = new System.Drawing.Point(556, 52);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(317, 264);
+            this.dataGridView1.Size = new System.Drawing.Size(375, 264);
             this.dataGridView1.TabIndex = 94;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(725, 26);
+            this.textBox4.Location = new System.Drawing.Point(672, 26);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(206, 20);
+            this.textBox4.Size = new System.Drawing.Size(259, 20);
             this.textBox4.TabIndex = 95;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(540, 30);
+            this.label4.Location = new System.Drawing.Point(485, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 13);
             this.label4.TabIndex = 96;
             this.label4.Text = "Overledenen";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Postcode ",
+            "Geboortedatum",
             "Straat",
             "Naam",
-            "BSN/Sofi-nummer"});
-            this.comboBox1.Location = new System.Drawing.Point(614, 26);
+            "BSN/Sofi-nummer",
+            "A-nummer",
+            "subjectcode"});
+            this.comboBox1.Location = new System.Drawing.Point(556, 26);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(105, 21);
+            this.comboBox1.Size = new System.Drawing.Size(110, 21);
             this.comboBox1.TabIndex = 97;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Addrightfulclaimant
             // 

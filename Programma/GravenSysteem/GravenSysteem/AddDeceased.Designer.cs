@@ -452,6 +452,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddDeceased";
             this.Text = "AddDeceased";
+            this.Load += new System.EventHandler(this.AddDeceased_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

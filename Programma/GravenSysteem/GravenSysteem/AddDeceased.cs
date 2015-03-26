@@ -20,7 +20,7 @@ namespace GravenSysteem
         {
             InitializeComponent();
         }
-        
+
         public AddDeceased(int width, int height, Point location)
         {
             this.width = width;
@@ -33,6 +33,12 @@ namespace GravenSysteem
             this.Width = width;
             this.Height = height;
             this.Location = location;
+        }
+
+        private void AddDeceased_Load(object sender, EventArgs e)
+        {
+            dateTimePicker1.MaxDate = System.DateTime.Today;
+            dateTimePicker2.MaxDate = System.DateTime.Today;
         }
     }
 }
