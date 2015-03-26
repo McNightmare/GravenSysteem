@@ -54,9 +54,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -180,7 +180,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(103, 20);
+            this.dateTimePicker1.Location = new System.Drawing.Point(116, 21);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(179, 20);
             this.dateTimePicker1.TabIndex = 12;
@@ -188,7 +188,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 20);
+            this.label2.Location = new System.Drawing.Point(36, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 13;
@@ -197,7 +197,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 47);
+            this.label3.Location = new System.Drawing.Point(36, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 13);
             this.label3.TabIndex = 14;
@@ -205,14 +205,14 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(103, 47);
+            this.dateTimePicker2.Location = new System.Drawing.Point(116, 66);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(179, 20);
             this.dateTimePicker2.TabIndex = 15;
             // 
             // dateTimePicker3
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(103, 74);
+            this.dateTimePicker3.Location = new System.Drawing.Point(116, 110);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(179, 20);
             this.dateTimePicker3.TabIndex = 17;
@@ -220,7 +220,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 73);
+            this.label4.Location = new System.Drawing.Point(37, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 26);
             this.label4.TabIndex = 16;
@@ -228,7 +228,7 @@
             // 
             // dateTimePicker4
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(103, 111);
+            this.dateTimePicker4.Location = new System.Drawing.Point(116, 153);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(179, 20);
             this.dateTimePicker4.TabIndex = 19;
@@ -236,7 +236,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 110);
+            this.label5.Location = new System.Drawing.Point(37, 152);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 13);
             this.label5.TabIndex = 18;
@@ -263,7 +263,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(15, 224);
+            this.checkBox1.Location = new System.Drawing.Point(15, 227);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(81, 17);
             this.checkBox1.TabIndex = 24;
@@ -273,15 +273,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 347);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 280);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(968, 64);
+            this.dataGridView1.Size = new System.Drawing.Size(968, 131);
             this.dataGridView1.TabIndex = 25;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 331);
+            this.label8.Location = new System.Drawing.Point(12, 264);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 13);
             this.label8.TabIndex = 26;
@@ -292,30 +292,13 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(576, 115);
+            this.groupBox1.Location = new System.Drawing.Point(616, 115);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(238, 92);
+            this.groupBox1.Size = new System.Drawing.Size(364, 92);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rechthebbende";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Naam";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(48, 19);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(130, 20);
-            this.textBox4.TabIndex = 28;
             // 
             // label10
             // 
@@ -326,6 +309,23 @@
             this.label10.TabIndex = 29;
             this.label10.Text = "Adres";
             // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Location = new System.Drawing.Point(48, 19);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(310, 20);
+            this.textBox4.TabIndex = 28;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Naam";
+            // 
             // comboBox1
             // 
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -334,7 +334,7 @@
             "Algemene Begraafplaats"});
             this.comboBox1.Location = new System.Drawing.Point(97, 48);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(261, 21);
             this.comboBox1.TabIndex = 28;
             // 
             // comboBox2
@@ -345,7 +345,7 @@
             "Algemene Begraafplaats"});
             this.comboBox2.Location = new System.Drawing.Point(97, 21);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(261, 21);
             this.comboBox2.TabIndex = 29;
             // 
             // groupBox2
@@ -360,7 +360,7 @@
             this.groupBox2.Controls.Add(this.dateTimePicker4);
             this.groupBox2.Location = new System.Drawing.Point(264, 15);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(306, 192);
+            this.groupBox2.Size = new System.Drawing.Size(346, 192);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Data";
@@ -371,9 +371,9 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.comboBox2);
             this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Location = new System.Drawing.Point(576, 19);
+            this.groupBox3.Location = new System.Drawing.Point(616, 19);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(238, 90);
+            this.groupBox3.Size = new System.Drawing.Size(364, 90);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Onderhoud";
