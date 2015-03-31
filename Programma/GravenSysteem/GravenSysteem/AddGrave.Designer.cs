@@ -50,7 +50,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkBoxReserved = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -62,11 +62,19 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.GroupBoxReserve = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.GroupBoxReserve.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblBurial
@@ -260,15 +268,16 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Conditie";
             // 
-            // checkBox1
+            // chkBoxReserved
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(15, 227);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(81, 17);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.Text = "Reserveren";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkBoxReserved.AutoSize = true;
+            this.chkBoxReserved.Location = new System.Drawing.Point(15, 227);
+            this.chkBoxReserved.Name = "chkBoxReserved";
+            this.chkBoxReserved.Size = new System.Drawing.Size(81, 17);
+            this.chkBoxReserved.TabIndex = 24;
+            this.chkBoxReserved.Text = "Reserveren";
+            this.chkBoxReserved.UseVisualStyleBackColor = true;
+            this.chkBoxReserved.CheckedChanged += new System.EventHandler(this.chkBoxReserved_CheckedChanged);
             // 
             // dataGridView1
             // 
@@ -358,9 +367,9 @@
             this.groupBox2.Controls.Add(this.dateTimePicker3);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.dateTimePicker4);
-            this.groupBox2.Location = new System.Drawing.Point(264, 15);
+            this.groupBox2.Location = new System.Drawing.Point(264, 11);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(346, 192);
+            this.groupBox2.Size = new System.Drawing.Size(346, 196);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Data";
@@ -371,9 +380,9 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.comboBox2);
             this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Location = new System.Drawing.Point(616, 19);
+            this.groupBox3.Location = new System.Drawing.Point(616, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(364, 90);
+            this.groupBox3.Size = new System.Drawing.Size(364, 98);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Onderhoud";
@@ -399,19 +408,84 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Algemene informatie";
             // 
+            // GroupBoxReserve
+            // 
+            this.GroupBoxReserve.Controls.Add(this.dateTimePicker6);
+            this.GroupBoxReserve.Controls.Add(this.label13);
+            this.GroupBoxReserve.Controls.Add(this.label12);
+            this.GroupBoxReserve.Controls.Add(this.dateTimePicker5);
+            this.GroupBoxReserve.Controls.Add(this.textBox2);
+            this.GroupBoxReserve.Controls.Add(this.label11);
+            this.GroupBoxReserve.Location = new System.Drawing.Point(102, 213);
+            this.GroupBoxReserve.Name = "GroupBoxReserve";
+            this.GroupBoxReserve.Size = new System.Drawing.Size(878, 48);
+            this.GroupBoxReserve.TabIndex = 33;
+            this.GroupBoxReserve.TabStop = false;
+            this.GroupBoxReserve.Text = "Reserve";
+            this.GroupBoxReserve.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 20);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(35, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Naam";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(48, 15);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(351, 20);
+            this.textBox2.TabIndex = 1;
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.Location = new System.Drawing.Point(437, 14);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker5.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(405, 18);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 13);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Van";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(643, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(23, 13);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Tot";
+            // 
+            // dateTimePicker6
+            // 
+            this.dateTimePicker6.Location = new System.Drawing.Point(672, 15);
+            this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker6.TabIndex = 5;
+            // 
             // AddGrave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(992, 423);
+            this.Controls.Add(this.GroupBoxReserve);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkBoxReserved);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddGrave";
             this.Text = "AddGrave";
@@ -424,6 +498,8 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.GroupBoxReserve.ResumeLayout(false);
+            this.GroupBoxReserve.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,7 +529,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkBoxReserved;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -465,5 +541,12 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox GroupBoxReserve;
+        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label11;
     }
 }

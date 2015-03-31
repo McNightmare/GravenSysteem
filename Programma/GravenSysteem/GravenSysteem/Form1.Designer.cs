@@ -318,7 +318,6 @@
             this.Toevoegen.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
