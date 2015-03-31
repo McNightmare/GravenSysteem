@@ -63,12 +63,12 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.GroupBoxReserve = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -88,7 +88,6 @@
             // 
             // cmbBurial
             // 
-            this.cmbBurial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbBurial.FormattingEnabled = true;
             this.cmbBurial.Items.AddRange(new object[] {
             "Algemene Begraafplaats"});
@@ -108,7 +107,6 @@
             // 
             // cmbGraveType
             // 
-            this.cmbGraveType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbGraveType.FormattingEnabled = true;
             this.cmbGraveType.Items.AddRange(new object[] {
             "Algemene Begraafplaats"});
@@ -162,7 +160,6 @@
             // 
             // cmbGraveCover
             // 
-            this.cmbGraveCover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbGraveCover.FormattingEnabled = true;
             this.cmbGraveCover.Location = new System.Drawing.Point(97, 123);
             this.cmbGraveCover.Name = "cmbGraveCover";
@@ -337,7 +334,6 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Algemene Begraafplaats"});
@@ -348,7 +344,6 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Algemene Begraafplaats"});
@@ -424,37 +419,12 @@
             this.GroupBoxReserve.Text = "Reserve";
             this.GroupBoxReserve.Visible = false;
             // 
-            // label11
+            // dateTimePicker6
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 20);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 13);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Naam";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(48, 15);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(351, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(437, 14);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker5.TabIndex = 2;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(405, 18);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(26, 13);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Van";
+            this.dateTimePicker6.Location = new System.Drawing.Point(672, 15);
+            this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker6.TabIndex = 5;
             // 
             // label13
             // 
@@ -465,12 +435,37 @@
             this.label13.TabIndex = 4;
             this.label13.Text = "Tot";
             // 
-            // dateTimePicker6
+            // label12
             // 
-            this.dateTimePicker6.Location = new System.Drawing.Point(672, 15);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker6.TabIndex = 5;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(405, 18);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 13);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Van";
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.Location = new System.Drawing.Point(437, 14);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker5.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(48, 15);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(351, 20);
+            this.textBox2.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 20);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(35, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Naam";
             // 
             // AddGrave
             // 
