@@ -17,11 +17,6 @@ namespace GravenSysteem
         public frmLogin()
         {
             InitializeComponent();
-            txtPassword.KeyDown += (sender, e) =>
-            {
-                if (e.KeyCode == Keys.Enter)
-                    btnLogin.PerformClick();
-            };
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -42,7 +37,12 @@ namespace GravenSysteem
             if (correct)
                 new frmMain().Show();
             else
+            {
                 MessageBox.Show("Uw login naam of wachtwoord is fout, probeer het opnieuw.");
+                txtUsername.Focus();
+                txtPassword.Clear();
+                txtUsername.SelectAll();
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
