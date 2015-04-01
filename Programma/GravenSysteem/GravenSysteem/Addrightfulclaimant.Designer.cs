@@ -362,6 +362,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Addrightfulclaimant";
             this.Text = "Addrightfulclaimant";
+            this.Load += new System.EventHandler(this.Addrightfulclaimant_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
