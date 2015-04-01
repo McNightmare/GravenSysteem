@@ -28,5 +28,13 @@ namespace GravenSysteem
             this.Height = height;
             this.Location = location;
         }
+
+        private void chkBoxReserved_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBoxReserved.Checked)
+                GroupBoxReserve.Show();
+            else
+                GroupBoxReserve.Hide();
+        }
     }
 }
