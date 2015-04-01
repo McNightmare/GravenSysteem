@@ -35,7 +35,10 @@ namespace GravenSysteem
             conn.Close();
 
             if (correct)
+            {
                 new frmMain().Show();
+                this.Hide();
+            }
             else
             {
                 MessageBox.Show("Uw login naam of wachtwoord is fout, probeer het opnieuw.");
