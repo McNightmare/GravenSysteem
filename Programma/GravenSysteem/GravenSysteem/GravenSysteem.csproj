@@ -75,6 +75,7 @@
     <Compile Include="Addrightfulclaimant.Designer.cs">
       <DependentUpon>Addrightfulclaimant.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseHandler.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -54,7 +54,6 @@ namespace GravenSysteem
                 else
                     MessageBox.Show("Username and password don't match.");
                 conn.Close();
-                //MessageBox.Show("Uw login naam of wachtwoord is fout, probeer het opnieuw.");
                 txtUsername.Focus();
                 txtPassword.Clear();
                 txtUsername.SelectAll();
