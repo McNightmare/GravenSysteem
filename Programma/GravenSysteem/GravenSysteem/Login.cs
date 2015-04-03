@@ -41,7 +41,20 @@ namespace GravenSysteem
             }
             else
             {
-                MessageBox.Show("Uw login naam of wachtwoord is fout, probeer het opnieuw.");
+                conn.Open();
+                rdr = new SqlCommand("SELECT Username FROM Users WHERE Username = '" + txtUsername.Text + "';", conn).ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    correct = rdr.GetString(0).Trim() == txtUsername.Text;
+                }
+
+                if (!correct)
+                    MessageBox.Show("Username doesn't exist.");
+                else
+                    MessageBox.Show("Username and password don't match.");
+                conn.Close();
+                //MessageBox.Show("Uw login naam of wachtwoord is fout, probeer het opnieuw.");
                 txtUsername.Focus();
                 txtPassword.Clear();
                 txtUsername.SelectAll();
