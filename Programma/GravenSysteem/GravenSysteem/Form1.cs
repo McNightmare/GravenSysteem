@@ -59,7 +59,7 @@ namespace GravenSysteem
             else
             {
                 this.WindowState = FormWindowState.Maximized;
-            }
+            } 
 
             foreach (Panel pnl in this.Controls)
             {

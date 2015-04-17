@@ -71,7 +71,6 @@ namespace GravenSysteem
             }
             con.Close();
         }
-
         private void textBox4_KeyUp(object sender, KeyEventArgs e)
         {
             SqlConnection test = new SqlConnection("Data Source=DEV-DC01;Initial Catalog=GA_TST;Integrated Security=True");
