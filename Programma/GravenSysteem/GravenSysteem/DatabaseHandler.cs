@@ -162,7 +162,31 @@ namespace GravenSysteem
             for (int i = 1; i < argType.Length; i++)
             {
                 query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
-                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+                query += "WHERE " + argType[i].Column;
+
+                switch (argType[i].ArgsOp)
+                {
+                    case ArgumentOperator.EQUEL:
+                        query += " = '";
+                        break;
+                    case ArgumentOperator.BIGGER:
+                        query += " > '";
+                        break;
+                    case ArgumentOperator.SMALLER:
+                        query += " < '";
+                        break;
+                    case ArgumentOperator.EQUELBIGGER:
+                        query += " >= '";
+                        break;
+                    case ArgumentOperator.EQUELSMALLER:
+                        query += " <= '";
+                        break;
+                    default:
+                        query += " = '";
+                        break;
+                }
+
+                query += argType[i].Value + "'";
             }
 
             query += ";";
@@ -249,7 +273,31 @@ namespace GravenSysteem
             for (int i = 1; i < argType.Length; i++)
             {
                 query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
-                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+                query += "WHERE " + argType[i].Column;
+
+                switch (argType[i].ArgsOp)
+                {
+                    case ArgumentOperator.EQUEL:
+                        query += " = '";
+                        break;
+                    case ArgumentOperator.BIGGER:
+                        query += " > '";
+                        break;
+                    case ArgumentOperator.SMALLER:
+                        query += " < '";
+                        break;
+                    case ArgumentOperator.EQUELBIGGER:
+                        query += " >= '";
+                        break;
+                    case ArgumentOperator.EQUELSMALLER:
+                        query += " <= '";
+                        break;
+                    default:
+                        query += " = '";
+                        break;
+                }
+
+                query += argType[i].Value + "'";
             }
 
             query += ";";
@@ -329,7 +377,31 @@ namespace GravenSysteem
             for (int i = 1; i < argType.Length; i++)
             {
                 query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
-                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+                query += "WHERE " + argType[i].Column;
+
+                switch (argType[i].ArgsOp)
+                {
+                    case ArgumentOperator.EQUEL:
+                        query += " = '";
+                        break;
+                    case ArgumentOperator.BIGGER:
+                        query += " > '";
+                        break;
+                    case ArgumentOperator.SMALLER:
+                        query += " < '";
+                        break;
+                    case ArgumentOperator.EQUELBIGGER:
+                        query += " >= '";
+                        break;
+                    case ArgumentOperator.EQUELSMALLER:
+                        query += " <= '";
+                        break;
+                    default:
+                        query += " = '";
+                        break;
+                }
+
+                query += argType[i].Value + "'";
             }
 
             query += ";";
@@ -416,7 +488,31 @@ namespace GravenSysteem
             for (int i = 1; i < argType.Length; i++)
             {
                 query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
-                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+                query += "WHERE " + argType[i].Column;
+
+                switch (argType[i].ArgsOp)
+                {
+                    case ArgumentOperator.EQUEL:
+                        query += " = '";
+                        break;
+                    case ArgumentOperator.BIGGER:
+                        query += " > '";
+                        break;
+                    case ArgumentOperator.SMALLER:
+                        query += " < '";
+                        break;
+                    case ArgumentOperator.EQUELBIGGER:
+                        query += " >= '";
+                        break;
+                    case ArgumentOperator.EQUELSMALLER:
+                        query += " <= '";
+                        break;
+                    default:
+                        query += " = '";
+                        break;
+                }
+
+                query += argType[i].Value + "'";
             }
 
             query += ";";
@@ -533,7 +629,31 @@ namespace GravenSysteem
             for (int i = 1; i < argType.Length; i++)
             {
                 query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
-                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+                query += "WHERE " + argType[i].Column;
+
+                switch (argType[i].ArgsOp)
+                {
+                    case ArgumentOperator.EQUEL:
+                        query += " = '";
+                        break;
+                    case ArgumentOperator.BIGGER:
+                        query += " > '";
+                        break;
+                    case ArgumentOperator.SMALLER:
+                        query += " < '";
+                        break;
+                    case ArgumentOperator.EQUELBIGGER:
+                        query += " >= '";
+                        break;
+                    case ArgumentOperator.EQUELSMALLER:
+                        query += " <= '";
+                        break;
+                    default:
+                        query += " = '";
+                        break;
+                }
+
+                query += argType[i].Value + "'";
             }
 
             query += ";";
@@ -652,7 +772,31 @@ namespace GravenSysteem
             for (int i = 1; i < argType.Length; i++)
             {
                 query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
-                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+                query += "WHERE " + argType[i].Column;
+
+                switch (argType[i].ArgsOp)
+                {
+                    case ArgumentOperator.EQUEL:
+                        query += " = '";
+                        break;
+                    case ArgumentOperator.BIGGER:
+                        query += " > '";
+                        break;
+                    case ArgumentOperator.SMALLER:
+                        query += " < '";
+                        break;
+                    case ArgumentOperator.EQUELBIGGER:
+                        query += " >= '";
+                        break;
+                    case ArgumentOperator.EQUELSMALLER:
+                        query += " <= '";
+                        break;
+                    default:
+                        query += " = '";
+                        break;
+                }
+
+                query += argType[i].Value + "'";
             }
 
             query += ";";
@@ -686,6 +830,7 @@ namespace GravenSysteem
     }
 
     public enum AndOr { AND, OR }
+    public enum ArgumentOperator { EQUEL, BIGGER, SMALLER, EQUELBIGGER, EQUELSMALLER }
 
     public struct ArgumentType
     {
@@ -697,34 +842,74 @@ namespace GravenSysteem
         public string Value { get; set; }
         public Type Type { get; set; }
         public AndOr AndOr { get; set; }
+        public ArgumentOperator ArgsOp { get; set; }
 
+        /// <summary> Default contructor. Uses the default Column, Value, Type, AndOr and ArgumentOperator. </summary>
         public ArgumentType()
         {
             Column = DefaultColumn;
             Value = DefaultValue;
             Type = DefaultType;
+            AndOr = AndOr.OR;
+            ArgsOp = ArgumentOperator.EQUEL;
         }
 
+        /// <summary> Custom contructor. Uses the default Type, AndOr and ArgumentOperator. </summary>
+        /// <param name="Column"> Parameter Column. </param>
+        /// <param name="Value"> Parameter Value. </param>
+        /// <example> ArgumentType("Username", "ziggo"); </example>
         public ArgumentType(string Column, string Value)
         {
             this.Column = Column;
             this.Value = Value;
             this.Type = DefaultType;
+            AndOr = AndOr.OR;
+            ArgsOp = ArgumentOperator.EQUEL;
         }
 
+        /// <summary> Custom contructor. Uses the default AndOr and ArgumentOperator. </summary>
+        /// <param name="Column"> Parameter Column. </param>
+        /// <param name="Value"> Parameter Value. </param>
+        /// <param name="Type"> Parameter Type. </param>
+        /// <example> ArgumentType("Username", "ziggo", typeof(string)); </example>
         public ArgumentType(string Column, string Value, Type Type)
         {
             this.Column = Column;
             this.Value = Value;
             this.Type = Type;
+            AndOr = AndOr.OR;
+            ArgsOp = ArgumentOperator.EQUEL;
         }
 
+        /// <summary> Custom contructor. Uses the default ArgumentOperator. </summary>
+        /// <param name="Column"> Parameter Column. </param>
+        /// <param name="Value"> Parameter Value. </param>
+        /// <param name="Type"> Parameter Type. </param>
+        /// <param name="AndOr"> Parameter AndOr. Chooses between AND or OR in your query. </param>
+        /// <example> ArgumentType("Username", "ziggo", typeof(string), AndOr.OR); </example>
         public ArgumentType(string Column, string Value, Type Type, AndOr AndOr)
         {
             this.Column = Column;
             this.Value = Value;
             this.Type = Type;
             this.AndOr = AndOr;
+            this.ArgsOp = ArgumentOperator.EQUEL;
+        }
+
+        /// <summary> Custom contructor. </summary>
+        /// <param name="Column"> Parameter Column. </param>
+        /// <param name="Value"> Parameter Value. </param>
+        /// <param name="Type"> Parameter Type. </param>
+        /// <param name="AndOr"> Parameter AndOr. Chooses between AND or OR in your query. </param>
+        /// <param name="ArgsOp"> Parameter ArgumentOperator. Chooses different operators in your query. </param>
+        /// <example> ArgumentType("Username", "ziggo", typeof(string), AndOr.OR, ArgumentOperator.EQUEL); </example>
+        public ArgumentType(string Column, string Value, Type Type, AndOr AndOr, ArgumentOperator ArgsOp)
+        {
+            this.Column = Column;
+            this.Value = Value;
+            this.Type = Type;
+            this.AndOr = AndOr;
+            this.ArgsOp = ArgsOp;
         }
     }
 }
