@@ -152,12 +152,20 @@ namespace GravenSysteem
         /// <summary> Preforms a query and returns a string or empty string on error. </summary>
         /// <param name="table"> Table name. </param>
         /// <param name="column"> Column name. Initializes after 'SELECT' </param>
-        /// <param name="argType"> Custom arguments parameter </param>
-        /// <example> GetString("tbl_Users", "Username", "ID", "1"); </example>
-        public string GetString(string table, string column, ArgumentType argType)
+        /// <param name="argType"> Custom arguments parameters </param>
+        /// <example> GetString("tbl_Users", "Username", new ArgumentType[] { new ArgumentType("Rights", "1") }); </example>
+        public string GetString(string table, string column, ArgumentType[] argType)
         {
             string result = null;
-            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType.Column + " = '" + argType.Value + "';";
+            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType[0].Column + " = '" + argType[0].Value + "'";
+
+            for (int i = 1; i < argType.Length; i++)
+            {
+                query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
+                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+            }
+
+            query += ";";
 
             try
             {
@@ -231,12 +239,20 @@ namespace GravenSysteem
         /// <summary> Preforms a query and returns a string array or null on error. </summary>
         /// <param name="table"> Table name. </param>
         /// <param name="column"> Column name. Initializes after 'SELECT' </param>
-        /// <param name="argType"> Custom arguments parameter </param>
-        /// <example> GetStringArray("tbl_Users", "Username", "Rights", "1"); </example>
-        public string[] GetStringArray(string table, string column, ArgumentType argType)
+        /// <param name="argType"> Custom arguments parameters </param>
+        /// <example> GetStringArray("tbl_Users", "Username", new ArgumentType[] { new ArgumentType("Rights", "1") }); </example>
+        public string[] GetStringArray(string table, string column, ArgumentType[] argType)
         {
             string[] result;
-            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType.Column + " = '" + argType.Value + "';";
+            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType[0].Column + " = '" + argType[0].Value + "'";
+
+            for (int i = 1; i < argType.Length; i++)
+            {
+                query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
+                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+            }
+
+            query += ";";
 
             try
             {
@@ -303,12 +319,20 @@ namespace GravenSysteem
         /// <summary> Preforms a query and returns an int or '-1' on error. </summary>
         /// <param name="table"> Table name. </param>
         /// <param name="column"> Column name. Initializes after 'SELECT' </param>
-        /// <param name="argType"> Custom arguments parameter </param>
-        /// <example> GetInt("tbl_Users", "Username", "ID", "1"); </example>
-        public int GetInt(string table, string column, ArgumentType argType)
+        /// <param name="argType"> Custom arguments parameters </param>
+        /// <example> GetInt("tbl_Users", "Username", new ArgumentType[] { new ArgumentType("Rights", "1") }); </example>
+        public int GetInt(string table, string column, ArgumentType[] argType)
         {
             int result = -1;
-            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType.Column + " = '" + argType.Value + "';";
+            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType[0].Column + " = '" + argType[0].Value + "'";
+
+            for (int i = 1; i < argType.Length; i++)
+            {
+                query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
+                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+            }
+
+            query += ";";
 
             try
             {
@@ -382,12 +406,20 @@ namespace GravenSysteem
         /// <summary> Preforms a query and returns an int array or null on error. </summary>
         /// <param name="table"> Table name. </param>
         /// <param name="column"> Column name. Initializes after 'SELECT' </param>
-        /// <param name="argType"> Custom arguments parameter </param>
-        /// <example> GetIntArray("tbl_Users", "ID", "Rights", "1"); </example>
-        public int[] GetIntArray(string table, string column, ArgumentType argType)
+        /// <param name="argType"> Custom arguments parameters </param>
+        /// <example> GetIntArray("tbl_Users", "ID", new ArgumentType[] { new ArgumentType("Rights", "1") }); </example>
+        public int[] GetIntArray(string table, string column, ArgumentType[] argType)
         {
             int[] result;
-            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType.Column + " = '" + argType.Value + "';";
+            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType[0].Column + " = '" + argType[0].Value + "'";
+
+            for (int i = 1; i < argType.Length; i++)
+            {
+                query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
+                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+            }
+
+            query += ";";
 
             try
             {
@@ -491,12 +523,20 @@ namespace GravenSysteem
 
         /// <summary> Preforms a query and returns a DataSet or null on error. </summary>
         /// <param name="table"> Table name. </param>
-        /// <param name="argType"> Custom arguments parameter </param>
-        /// <example> GetDataSet("tbl_Users", "Rights", "1"); </example>
-        public DataSet GetDataSet(string table, ArgumentType argType)
+        /// <param name="argType"> Custom arguments parameters </param>
+        /// <example> GetDataSet("tbl_Users", new ArgumentType[] { new ArgumentType("Rights", "1") }); </example>
+        public DataSet GetDataSet(string table, ArgumentType[] argType)
         {
             DataSet result = new DataSet();
-            string query = "SELECT * FROM " + table + " WHERE " + argType.Column + " = '" + argType.Value + "';";
+            string query = "SELECT * FROM " + table + " WHERE " + argType[0].Column + " = '" + argType[0].Value + "'";
+
+            for (int i = 1; i < argType.Length; i++)
+            {
+                query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
+                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+            }
+
+            query += ";";
 
             try
             {
@@ -603,11 +643,19 @@ namespace GravenSysteem
         /// <param name="table"> Table name. </param>
         /// <param name="column"> Column name. </param>
         /// <param name="argType"> Custom arguments parameter </param>
-        /// <example> SetValue("tbl_Users", "Username", "Username", "admin"); </example>
-        public bool SetValue(string table, string column, ArgumentType argType)
+        /// <example> SetValue("tbl_Users", "Username", new ArgumentType[] { new ArgumentType("Rights", "1") }); </example>
+        public bool SetValue(string table, string column, ArgumentType[] argType)
         {
             bool result = false;
-            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType.Column + " = '" + argType.Value + "';";
+            string query = "SELECT " + column + " FROM " + table + " WHERE " + argType[0].Column + " = '" + argType[0].Value + "'";
+
+            for (int i = 1; i < argType.Length; i++)
+            {
+                query += (argType[i].AndOr == AndOr.AND) ? " AND " : " OR ";
+                query += "WHERE " + argType[i].Column + " = '" + argType[i].Value + "'";
+            }
+
+            query += ";";
 
             try
             {
@@ -637,6 +685,8 @@ namespace GravenSysteem
         }
     }
 
+    public enum AndOr { AND, OR }
+
     public struct ArgumentType
     {
         private string DefaultColumn { get { return ""; } }
@@ -646,6 +696,7 @@ namespace GravenSysteem
         public string Column { get; set; }
         public string Value { get; set; }
         public Type Type { get; set; }
+        public AndOr AndOr { get; set; }
 
         public ArgumentType()
         {
@@ -666,6 +717,14 @@ namespace GravenSysteem
             this.Column = Column;
             this.Value = Value;
             this.Type = Type;
+        }
+
+        public ArgumentType(string Column, string Value, Type Type, AndOr AndOr)
+        {
+            this.Column = Column;
+            this.Value = Value;
+            this.Type = Type;
+            this.AndOr = AndOr;
         }
     }
 }
