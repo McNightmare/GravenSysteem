@@ -68,6 +68,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.btnOverledenen = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -404,12 +405,24 @@
             this.label18.TabIndex = 37;
             this.label18.Text = "Email";
             // 
+            // btnOverledenen
+            // 
+            this.btnOverledenen.BackColor = System.Drawing.SystemColors.Control;
+            this.btnOverledenen.Location = new System.Drawing.Point(758, 326);
+            this.btnOverledenen.Name = "btnOverledenen";
+            this.btnOverledenen.Size = new System.Drawing.Size(116, 23);
+            this.btnOverledenen.TabIndex = 38;
+            this.btnOverledenen.Text = "Opslaan";
+            this.btnOverledenen.UseVisualStyleBackColor = false;
+            this.btnOverledenen.Click += new System.EventHandler(this.btnOverledenen_Click);
+            // 
             // AddDeceased
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(992, 423);
+            this.Controls.Add(this.btnOverledenen);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.label17);
@@ -502,5 +515,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btnOverledenen;
     }
 }

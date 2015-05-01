@@ -67,7 +67,7 @@ namespace GravenSysteem
 
                     dataGridView1.DataSource = t;
                 }
-
+                 
             }
             con.Close();
         }
