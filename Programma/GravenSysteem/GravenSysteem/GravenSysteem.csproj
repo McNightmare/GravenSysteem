@@ -105,6 +105,9 @@
     <EmbeddedResource Include="addLeverancier.resx">
       <DependentUpon>addLeverancier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Addrightfulclaimant.resx">
+      <DependentUpon>Addrightfulclaimant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
