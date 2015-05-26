@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Grave Admin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	
+    <string-array name="subjectArray">
+		<item>postcode</item>
+		<item>straat</item>
+		<item>geboortedatum</item>
+		<item>overledene</item>
+		<item>subject naam</item>
+		<item>bsn/sofi-nummer</item>
+		<item>a-nummer</item>
+		<item>subjectcode</item>
+		<item>advanced</item>
+	</string-array>
+	<string-array name="graveArray">
+		<item>begraafplaats</item>
+		<item>locatie</item>
+		<item>rechthebbende</item>
+		<item>overledene</item>
+		<item>gereserveerd</item>
+	</string-array>
+	<string-array name="deceasedArray">
+		<item>overledene naam</item>
+		<item>begraafplaats</item>
+		<item>herkenningssteentje</item>
+		<item>belanghebbende</item>
+	</string-array>
+	<string-array name="drawerArray">
+		<item >Subjects</item>
+		<item >Graven</item>
+		<item >Overledene</item>
+	</string-array>
+	<string-array name="typeArray">
+		<item >Begraafplaats</item>
+		<item >Begrafenis Ondernemer</item>
+		<item >Belanghebbende</item>
+		<item >Leverancier</item>
+		<item >Overledene</item>
+		<item >Rechthebbende</item>
+	</string-array>
+</resources>
