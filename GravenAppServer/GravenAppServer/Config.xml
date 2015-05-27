@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+	<server>
+		<ip>10.250.40.182</ip>
+		<port>80</port>
+		<account>
+			<username>admin</username>
+			<password></password>
+		</account>
+		<language>EN</language>
+	</server>
+</settings>
