@@ -146,7 +146,7 @@
             this.tabControl1.Location = new System.Drawing.Point(-7, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1013, 100);
+            this.tabControl1.Size = new System.Drawing.Size(1013, 93);
             this.tabControl1.TabIndex = 0;
             // 
             // Toevoegen
@@ -226,7 +226,7 @@
             this.Bewerken.Location = new System.Drawing.Point(4, 25);
             this.Bewerken.Name = "Bewerken";
             this.Bewerken.Padding = new System.Windows.Forms.Padding(3);
-            this.Bewerken.Size = new System.Drawing.Size(1005, 71);
+            this.Bewerken.Size = new System.Drawing.Size(1005, 64);
             this.Bewerken.TabIndex = 1;
             this.Bewerken.Text = "Bewerken";
             // 
@@ -318,6 +318,7 @@
             this.Toevoegen.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

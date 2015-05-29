@@ -28,6 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.DataAccess.Sql.TableQuery tableQuery1 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo1 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo1 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo2 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo3 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo4 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo5 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo6 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddGrave));
             this.lblBurial = new System.Windows.Forms.Label();
             this.cmbBurial = new System.Windows.Forms.ComboBox();
             this.lblGraveType = new System.Windows.Forms.Label();
@@ -51,7 +60,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.chkBoxReserved = new System.Windows.Forms.CheckBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -69,12 +77,22 @@
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVoornaam = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStraat = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWoonplaats = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGemeente = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLand = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.GroupBoxReserve.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBurial
@@ -276,14 +294,6 @@
             this.chkBoxReserved.UseVisualStyleBackColor = true;
             this.chkBoxReserved.CheckedChanged += new System.EventHandler(this.chkBoxReserved_CheckedChanged);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 280);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(968, 131);
-            this.dataGridView1.TabIndex = 25;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -467,24 +477,114 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Naam";
             // 
+            // gridControl1
+            // 
+            this.gridControl1.DataMember = "Overledenen";
+            this.gridControl1.DataSource = this.sqlDataSource1;
+            this.gridControl1.Location = new System.Drawing.Point(15, 280);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(965, 132);
+            this.gridControl1.TabIndex = 34;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colVoornaam,
+            this.colStraat,
+            this.colWoonplaats,
+            this.colGemeente,
+            this.colLand});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "dev-dc01.GA_TST.dbo";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            tableQuery1.Name = "Overledenen";
+            tableInfo1.Name = "Overledenen";
+            columnInfo1.Name = "Id";
+            columnInfo2.Name = "Voornaam";
+            columnInfo3.Name = "Straat";
+            columnInfo4.Name = "Woonplaats";
+            columnInfo5.Name = "Gemeente";
+            columnInfo6.Name = "Land";
+            tableInfo1.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo1,
+            columnInfo2,
+            columnInfo3,
+            columnInfo4,
+            columnInfo5,
+            columnInfo6});
+            tableQuery1.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo1});
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            tableQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.Visible = true;
+            this.colId.VisibleIndex = 0;
+            // 
+            // colVoornaam
+            // 
+            this.colVoornaam.FieldName = "Voornaam";
+            this.colVoornaam.Name = "colVoornaam";
+            this.colVoornaam.Visible = true;
+            this.colVoornaam.VisibleIndex = 1;
+            // 
+            // colStraat
+            // 
+            this.colStraat.FieldName = "Straat";
+            this.colStraat.Name = "colStraat";
+            this.colStraat.Visible = true;
+            this.colStraat.VisibleIndex = 2;
+            // 
+            // colWoonplaats
+            // 
+            this.colWoonplaats.FieldName = "Woonplaats";
+            this.colWoonplaats.Name = "colWoonplaats";
+            this.colWoonplaats.Visible = true;
+            this.colWoonplaats.VisibleIndex = 3;
+            // 
+            // colGemeente
+            // 
+            this.colGemeente.FieldName = "Gemeente";
+            this.colGemeente.Name = "colGemeente";
+            this.colGemeente.Visible = true;
+            this.colGemeente.VisibleIndex = 4;
+            // 
+            // colLand
+            // 
+            this.colLand.FieldName = "Land";
+            this.colLand.Name = "colLand";
+            this.colLand.Visible = true;
+            this.colLand.VisibleIndex = 5;
+            // 
             // AddGrave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(992, 423);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.GroupBoxReserve);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.chkBoxReserved);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddGrave";
             this.Text = "AddGrave";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -495,6 +595,8 @@
             this.groupBox4.PerformLayout();
             this.GroupBoxReserve.ResumeLayout(false);
             this.GroupBoxReserve.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -525,7 +627,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox chkBoxReserved;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label10;
@@ -543,5 +644,14 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label11;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn colId;
+        private DevExpress.XtraGrid.Columns.GridColumn colVoornaam;
+        private DevExpress.XtraGrid.Columns.GridColumn colStraat;
+        private DevExpress.XtraGrid.Columns.GridColumn colWoonplaats;
+        private DevExpress.XtraGrid.Columns.GridColumn colGemeente;
+        private DevExpress.XtraGrid.Columns.GridColumn colLand;
     }
 }
