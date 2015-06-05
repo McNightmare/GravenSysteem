@@ -20,6 +20,11 @@ namespace GravenAdministratie
             barButtonAddSubject.AllowDrawArrow = false;
         }
 
+        private void barButtonGraveyard_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //toevoegen begraafplaats
+        }
+
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -27,77 +32,47 @@ namespace GravenAdministratie
 
         private void barButtonAddGrave_ItemClick(object sender, ItemClickEventArgs e)
         {
-            addGrave addGrave = new addGrave();
-            addGrave.TopLevel = false;
-            addGrave.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(addGrave);
-            addGrave.Show();
-        }
-        private void barButtonGraveyard_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //toevoegen begraafplaats
+            CreateForm(new addGrave());
+
         }
 
         private void barButtonRightfulclaimant_ItemClick(object sender, ItemClickEventArgs e)
         {
-            addRightfull addRightfull = new addRightfull();
-            addRightfull.TopLevel = false;
-            addRightfull.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(addRightfull);
-            addRightfull.Show();
+            CreateForm(new addRightfull());
         }
 
         private void barButtonSupplier_ItemClick(object sender, ItemClickEventArgs e)
         {
-            AddDelevirer addDeliv = new AddDelevirer();
-            addDeliv.TopLevel = false;
-            addDeliv.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(addDeliv);
-            addDeliv.Show();
+            CreateForm(new AddDelevirer());
         }
 
         private void barButtonSearchSubject_ItemClick(object sender, ItemClickEventArgs e)
         {
-            SearchSubject searchsubject = new SearchSubject();
-            searchsubject.TopLevel = false;
-            searchsubject.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(searchsubject);
-            searchsubject.Show();
-
+            CreateForm(new SearchSubject());
         }
 
         private void barButtonSearchDeceased_ItemClick(object sender, ItemClickEventArgs e)
         {
-            SearchDeceased searchdeceased = new SearchDeceased();
-            searchdeceased.TopLevel = false;
-            searchdeceased.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(searchdeceased);
-            searchdeceased.Show();
+            CreateForm(new SearchDeceased());
         }
 
         private void barButtonSearchGrave_ItemClick(object sender, ItemClickEventArgs e)
         {
-            SearchGrave searchgrave = new SearchGrave();
-            searchgrave.TopLevel = false;
-            searchgrave.Dock = DockStyle.Fill;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(searchgrave);
-            searchgrave.Show();
+            CreateForm(new SearchGrave());
         }
 
         private void barButtonDeceased_ItemClick(object sender, ItemClickEventArgs e)
         {
-            addDeceased addDeceased = new addDeceased();
-            addDeceased.TopLevel = false;
-            addDeceased.Dock = DockStyle.Fill;
+            CreateForm(new addDeceased());
+        }
+
+        private void CreateForm(Form form)
+        {
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
             pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(addDeceased);
-            addDeceased.Show();
+            pnlMain.Controls.Add(form);
+            form.Show();
         }
     }
 }

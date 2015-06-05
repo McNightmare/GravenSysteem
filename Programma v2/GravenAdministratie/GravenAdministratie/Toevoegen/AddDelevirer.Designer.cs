@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.ewa = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -63,27 +63,27 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(238, 21);
-            this.textBox1.TabIndex = 0;
+            this.txtName.Location = new System.Drawing.Point(146, 27);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(238, 21);
+            this.txtName.TabIndex = 0;
             // 
-            // textBox2
+            // ewa
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 21);
-            this.textBox2.TabIndex = 1;
+            this.ewa.Location = new System.Drawing.Point(146, 54);
+            this.ewa.Name = "ewa";
+            this.ewa.Size = new System.Drawing.Size(238, 21);
+            this.ewa.TabIndex = 1;
             // 
             // textBox3
             // 
@@ -356,28 +356,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Adress";
             // 
-            // groupBox2
+            // label18
             // 
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(409, 275);
-            this.groupBox2.TabIndex = 37;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Gegevens";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(395, 39);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(56, 21);
-            this.textBox18.TabIndex = 0;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(544, 39);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(65, 21);
-            this.textBox19.TabIndex = 1;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(457, 42);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(81, 13);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "Huistoevoeging";
             // 
             // label17
             // 
@@ -388,14 +374,28 @@
             this.label17.TabIndex = 2;
             this.label17.Text = "Huisletter";
             // 
-            // label18
+            // textBox19
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(457, 42);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(81, 13);
-            this.label18.TabIndex = 3;
-            this.label18.Text = "Huistoevoeging";
+            this.textBox19.Location = new System.Drawing.Point(544, 39);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(65, 21);
+            this.textBox19.TabIndex = 1;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(395, 39);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(56, 21);
+            this.textBox18.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(409, 275);
+            this.groupBox2.TabIndex = 37;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Gegevens";
             // 
             // AddDelevirer
             // 
@@ -434,8 +434,8 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ewa);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -450,8 +450,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox ewa;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
