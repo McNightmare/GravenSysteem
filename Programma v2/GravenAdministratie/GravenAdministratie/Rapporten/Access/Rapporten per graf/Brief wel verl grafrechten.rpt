@@ -1,0 +1,49 @@
+[Report]
+Name=Brief wel verlengen
+TemplateName=Brief wel verl grafrechten.rtf
+SQLCompatibility=MSAccess
+
+[Query-0]
+SQL1=select    Date()               as Today,
+SQL2=          PLC.PLCUSRKEY        as GraveNumber,
+SQL3=          CemeteryInfo.SBJNAM  as CemeteryName,
+SQL4=          IIF((OwnerInfo.SBJGES is NULL) or (OwnerInfo.SBJGES = ''),
+SQL5=          'heer/mevrouw',
+SQL6=          IIF((OwnerInfo.SBJGES = 'M'),
+SQL7=          'heer','mevrouw'))   as Aanhef,
+SQL8=          OwnerInfo.SBJVLT     as OwnerName01,
+SQL9=          OwnerInfo.SBJVVG     as OwnerName02,
+SQL10=         OwnerInfo.SBJNAM     as OwnerName03,
+SQL11=         OwnerInfo.SBJVOR     as OwnerName04,
+SQL12=         OwnerInfo.SBJPTTKDE  as OwnerAdress01,
+SQL13=         OwnerInfo.SBJWPLNAM  as OwnerAdress02,
+SQL14=         OwnerInfo.SBJSTTNAM  as OwnerAdress03,
+SQL15=         OwnerInfo.SBJHUINUM&' '&OwnerInfo.SBJHUILET&' '&OwnerInfo.SBJHUITVG&' '&OwnerInfo.SBJHUIAND as OwnerADRESS04,
+SQL16=         DeadPerson.SBJVLT    as DeadName01,
+SQL17=         DeadPerson.SBJVVG    as DeadName02,
+SQL18=         DeadPerson.SBJNAM    as DeadName03,
+SQL19=         DeadPerson.SBJVOR    as DeadName04,
+SQL20=         MID(DeadObject.OBJTEMDAT,7,2)&'-'&MID(DeadObject.OBJTEMDAT,5,2)&'-'&MID(DeadObject.OBJTEMDAT,1,4)
+SQL21=         as Verstrijkingsdatum,
+SQL22=         MID(Deadperson.SBJOVLDAT,7,2)&'-'&MID(Deadperson.SBJOVLDAT,5,2)&'-'&MID(Deadperson.SBJOVLDAT,1,4)
+SQL23=         as OvlDatum,
+SQL24=         MID(DeadObject.OBJVANDAT,7,2)&'-'&MID(DeadObject.OBJVANDAT,5,2)&'-'&MID(DeadObject.OBJVANDAT,1,4)
+SQL25=         as DependingText03
+SQL26=from     (((((PLC left outer join OBJ as DeadObject on PLC.PLCIDN     = DeadObject.OBJPLCIDN)
+SQL27=         left outer join SBJ as DeadPerson    on DeadObject.OBJSBJIDN = DeadPerson.SBJIDN)
+SQL28=         left outer join SBJ as CemeteryInfo  on PLC.PLCBGPIDN        = CemeteryInfo.SBJIDN)
+SQL29=         left outer join SBJ as OwnerInfo     on PLC.PLCRHBIDN        = OwnerInfo.SBJIDN))
+SQL30=         left outer join SBJ as ReserverInfo  on PLC.PLCRESIDN        = ReserverInfo.SBJIDN
+SQL31=where    (PLC.PLCIDN = :pPLCIDN)  
+
+Base=PLC
+[Parameters-0]
+pPLCIDN=STRING
+
+[Logging]
+Entity=PLC
+Field=PLCIDN
+Query=PLC
+
+[Authorization]
+Code=3CA1C5CF

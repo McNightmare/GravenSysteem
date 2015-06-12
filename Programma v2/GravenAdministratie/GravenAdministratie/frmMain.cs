@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using GravenAdministratie.zoeken;
+using System.IO;
 
 namespace GravenAdministratie
 {
@@ -73,6 +74,37 @@ namespace GravenAdministratie
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(form);
             form.Show();
+        }
+
+        private void barButtonReportsPerGrave_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            string filepath = Directory.GetCurrentDirectory() + @"\Rapporten\Access\Rapporten per graf";
+            DirectoryInfo d = new DirectoryInfo(filepath);
+
+
+            if (menuPerGrave.ItemLinks.Count > 0)
+            {
+                foreach (var file in d.GetFiles("*.rtf"))
+                {
+
+                    menuPerGrave.AddItem(new BarButtonItem(menuPerGrave.Manager, file.Name));
+
+                }
+            }
+            else
+            {
+                foreach (var file in d.GetFiles("*.rtf"))
+                {
+                    for (int i = 0; i < menuPerGrave.ItemLinks.Count; i++)
+                    {
+                        if (file.Name != menuPerGrave.ItemLinks[i].Data)
+                        {
+                            menuPerGrave.AddItem(new BarButtonItem(menuPerGrave.Manager, file.Name));
+
+                        }
+                    }
+                }
+            }
         }
     }
 }

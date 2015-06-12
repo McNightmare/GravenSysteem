@@ -1,0 +1,74 @@
+[Report]
+Name=Grafverlenging massale aanschrijving
+TemplateName=Grafverlenging massale aanschrijving.rtf
+SQLCompatibility=MSAccess
+
+[Query-0]
+SQL1=  SELECT usr.*, Trim(sbj.sbjvlt&' '&Trim(sbj.sbjvvg&' '&sbj.sbjnam)) as Namopm, bgp.sbjnam as begraaf,
+SQL2=  Trim(sbj.sbjvvg&' '&sbj.sbjnam) as Namkort, Trim(Mid(OBJTEMDAT,7,2)&'-'&Mid(OBJTEMDAT,5,2)&'-'&Mid(OBJTEMDAT,1,4)) as einddat, sbj.sbjtel as tel, sbj.sbjsof as bsn, plc.plcpltidn as kosttype, Trim(Mid(obj.objbgrdat,7,2)&'-'&Mid(obj.objbgrdat,5,2)&'-'&Mid(obj.objbgrdat,1,4)) as bgrdat,
+SQL3=  (sbj.sbjges) as rhbgesl, Trim(MID(sbj.sbjpttkde, 1,4)&' '&MID(sbj.sbjpttkde, 5,2)) as pttkde, * 
+sql4=  FROM SBJ, PLC, OBJ, SBJ BGP, USR
+sql5=  WHERE SBJ.SBJIDN=PLCRHBIDN AND PLCIDN = OBJPLCIDN AND bgp.sbjidn=plcbgpidn AND
+SQL6=  PLCBGPIDN=:PLCBGPIDN AND (OBJTEMDAT >= :VANDAT) AND (OBJTEMDAT <= :TEMDAT) 
+SQL7=  AND OBJTEMDAT IN (SELECT MIN(OBJTEMDAT) FROM OBJ WHERE OBJPLCIDN=PLCIDN) and usridn=:usridn
+sql8=  ORDER BY SBJ.SBJNAM
+Base=QRY
+
+[Parameters-0]
+PLCBGPIDN=STRINGCOMBOBOX|Begraafplaats
+VANDAT=DATENUM|Overledene Recht: tussen ...
+TEMDAT=DATENUM|Overledene Recht: ... en ...
+USRIDN=STRINGCOMBOBOX|Ondertekenen met
+
+[PLCBGPIDN]
+TableName=SBJ, SBK WHERE SBKSBJIDN=SBJIDN AND SBKSBTIDN='BGP'
+ValueFieldName=SBJIDN
+NameFieldName=SBJNAM
+OrderFieldName=SBJNAM
+
+[USRIDN]
+TableName=USR
+ValueFieldName=USRIDN
+NameFieldName=USRNAM
+OrderFieldName=USRNAM
+
+[Query-1]
+SQL1=  select * from usr where usridn=:usridn2
+
+Base=USR
+
+[Parameters-1]
+USRIDN2=STRINGCOMBOBOX|Contact opnemen met
+
+[USRIDN2]
+TableName=USR
+ValueFieldName=USRIDN
+NameFieldName=USRNAM
+OrderFieldName=USRNAM
+
+[Query-2]
+SQL1=  Select Trim(ovl.sbjvlt&' '&Trim(ovl.sbjvvg&' '&ovl.sbjnam)) as Namovld, 
+SQL2=  Trim(Mid(ovl.sbjgebdat,7,2)&'-'&Mid(ovl.sbjgebdat,5,2)&'-'&Mid(ovl.sbjgebdat,1,4)) as gebdat, 
+SQL3=  Trim(Mid(ovl.sbjovldat,7,2)&'-'&Mid(ovl.sbjovldat,5,2)&'-'&Mid(ovl.sbjovldat,1,4)) as ovldat, * 
+SQL4=  from OBJ, SBJ OVL where sbjidn = objsbjidn
+BASE=OVL
+MasterSource=0
+IndexFieldNames=OBJPLCIDN
+MasterFields=PLCIDN
+
+[Query-3]
+SQL=SELECT *, Trim(MID(OBJTEMDAT,7,2)) AS OBJTEMDATDAG, Trim(MID(OBJTEMDAT,5,2)) AS OBJTEMDATMAN, Trim(MID(OBJTEMDAT,1,4)) AS OBJTEMDATJAR FROM SBJ, PLC, OBJ WHERE SBJIDN=OBJSBJIDN AND PLCIDN = OBJPLCIDN AND OBJTEMDAT > 0 AND OBJTEMDAT IN (SELECT MIN(OBJTEMDAT) FROM OBJ WHERE OBJPLCIDN=PLCIDN) ORDER BY SBJNAM
+Base=RHO
+MasterSource=0
+IndexFieldNames=PLCIDN
+MasterFields=PLCIDN
+
+[Query-4]
+SQL1=  select tar.tarbdr as eigen from TAR where taridn='VGR'
+Base=TAR
+
+[Query-5]
+SQL1=  select tar.tarbdr as eigen1 from TAR where taridn='VKGR'
+Base=TAR1
+[Authorization]
+Code=3CA1C5CF

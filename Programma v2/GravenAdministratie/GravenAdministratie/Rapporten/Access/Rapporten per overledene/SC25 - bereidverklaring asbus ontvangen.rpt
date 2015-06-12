@@ -1,0 +1,34 @@
+[Report]
+Name=SC25 - bereidverklaring asbus ontvangen
+TemplateName=SC25 - bereidverklaring asbus ontvangen.rtf
+SQLCompatibility=MSAccess
+
+[Query-0]
+SQL1=  select Trim(ovl.sbjvlt&' '&Trim(ovl.sbjvvg&' '&ovl.sbjnam)) as pernam,
+SQL2=  ovl.sbjvor as voor, Trim(MID(ovl.sbjpttkde, 1,4)&' '&MID(ovl.sbjpttkde, 5,2)) as pttkde,
+SQL3=  Trim(Mid(ovl.sbjgebdat,7,2)&'-'&Mid(ovl.sbjgebdat,5,2)&'-'&Mid(ovl.sbjgebdat,1,4)) as pergeb, 
+SQL4=  Trim(Mid(ovl.sbjovldat,7,2)&'-'&Mid(ovl.sbjovldat,5,2)&'-'&Mid(ovl.sbjovldat,1,4)) as perdat,
+SQL5=  Trim(rhb.sbjvlt&' '&Trim(rhb.sbjvvg&' '&rhb.sbjnam)) as rhbnaam,  rhb.sbjges as rhbgesl, 
+SQL6=  Trim(MID(rhb.sbjpttkde, 1,4)&' '&MID(rhb.sbjpttkde, 5,2)) as rhbpttkde, rhb.sbjwplnam as rhbplt, 
+SQL7=  rhb.sbjsttnam as rhbstr, rhb.sbjhuinum as rhbnum, rhb.sbjhuilet as rhblet,
+SQL8=  ovl.*, usr.*
+SQL9=  from obj Positie, sbj ovl, sbj bgp, plc, usr, sbj rhb
+SQL10=  where ovl.sbjidn=Positie.objsbjidn and
+SQL11=  plc.plcidn=Positie.objplcidn and 
+SQL12=  bgp.sbjidn=plc.plcbgpidn and 
+SQL13= rhb.sbjidn=plcrhbidn and
+SQL14= Positie.objidn=:OBJIDN and usridn=:usridn
+
+Base=OBJ
+[Parameters-0]
+OBJIDN=STRING
+USRIDN=STRINGCOMBOBOX|Contact
+
+[USRIDN]
+TableName=USR
+ValueFieldName=USRIDN
+NameFieldName=USRNAM
+OrderFieldName=USRNAM
+
+[Authorization]
+Code=3CA1C5CF

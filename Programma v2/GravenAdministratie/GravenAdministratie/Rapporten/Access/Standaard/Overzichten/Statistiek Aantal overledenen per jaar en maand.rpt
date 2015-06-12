@@ -1,0 +1,12 @@
+[Report]
+Name=Statistiek Overledene Jaar Maand
+TemplateName=Statistiek Aantal overledenen per jaar en maand.rtf
+SQLCompatibility=MSAccess
+
+[Query-0]
+SQL=SELECT  Trim(MID(SBJOVLDAT,1,4)) AS Year, Trim(MID(SBJOVLDAT,5,2)) AS Month, Count(SBJ.SBJIDN) AS Num FROM SBJ, obj WHERE (((SBJ.SBJOVLDAT) Is Not Null)) AND SBJ.SBJIDN=obj.OBJSBJIDN GROUP BY Trim(MID(SBJOVLDAT,1,4)),Trim(MID(SBJOVLDAT,5,2))
+Base=SBJ
+
+[Authorization]
+Code=3CA1C5CF
+

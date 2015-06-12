@@ -1,0 +1,16 @@
+[Report]
+Name=Bevolkingsmutaties
+TemplateName=Bevolkingsmutaties.rtf
+SQLCompatibility=Oracle,MSAccess
+
+[Query-0]
+SQL=SELECT * FROM MUT, VLD WHERE MUTVELD=VLDVELD AND MUTDATE+1 > :VANDAT AND MUTDATE-1 < :TEMDAT ORDER BY MUTSBJIDN, MUTVELD, MUTDATE
+Base=MUT
+
+[Parameters-0]
+VANDAT=DATE|Datum mutaties vanaf
+TEMDAT=DATE|Datum mutaties t/m
+
+[Authorization]
+Code=3CA1C5CF
+

@@ -1,0 +1,37 @@
+[Report]
+Name=Nieuwe Factuur
+TemplateName=Factuur 2.rtf
+SQLCompatibility=MSAccess
+
+[Query-0]
+SQL=select DOC.DOCIDN as DOCNUM,NOW as DOCDATE,NOW as TODAYDATE,(SBJVLT+' '+SBJVVG+' '+SBJNAM) as FULLNAME,(SBJPTTKDE+' '+SBJWPLNAM) as ADRESS01,(SBJSTTNAM) as ADRESS02,(SBJHUINUM+' '+SBJHUILET+' '+SBJHUITVG+' '+SBJHUIAND) as ADRESS03,SBJLNDNAM as ADRESS04,'' as CEMETERY, :DatumPlusOneMonth as DATE01 from DOC, SBJ where (SBJ.SBJIDN = DOC.DOCBPLIDN) and (DOCIDN = :DocumentIDN)
+Base=DOC
+[Parameters-0]
+DocumentIDN=STRING|Number of the document
+DatumPlusOneMonth=STRING|The date of the document + one month
+
+[Query-1]
+SQL=select plc.*,plc.PLCUSRKEY as GRAVENUMBER,CemeteryInfo.SBJNAM as CEMETERY,(OwnerInfo.SBJVLT+' '+OwnerInfo.SBJVVG+' '+OwnerInfo.SBJNAM) as OWNNAM,(OwnerInfo.SBJSTTNAM+' '+OwnerInfo.SBJHUINUM+' '+OwnerInfo.SBJHUILET+' '+OwnerInfo.SBJHUITVG+' '+OwnerInfo.SBJHUIAND) as ADRES,(OwnerInfo.SBJPTTKDE+' '+OwnerInfo.SBJWPLNAM) as WONPLT,:FirstBGRDAT as BEGDAT, '????????????' as DEPTEXT01, '????????????' as rechtentot from plc,sbj as CemeteryInfo,sbj as OwnerInfo where (PLC.PLCIDN=:FirstPLCIDN) and (PLC.PLCBGPIDN=CemeteryInfo.SBJIDN) and (PLC.PLCRHBIDN=OwnerInfo.SBJIDN)
+Base=INFO
+[Parameters-1]
+FirstPLCIDN=STRING|First place IDN
+FirstBGRDAT=STRING|First dead bury date
+
+[Query-2]
+SQL=select *, (ARTATL * ARTBDR * (1 + ARTBTW / 100)) as ARTSUM from SBJ, DOC, DOR, ART where (DOCBPLIDN = SBJIDN) and (DORDOCIDN = DOCIDN) and (DORARTIDN = ARTIDN) and (DOCIDN=:DocumentIDN)
+Base=DATA
+[Parameters-2]
+DocumentIDN=STRING|Number of the document
+
+[Query-3]
+SQL=select distinct :GRAVENUMBER + '' as GRAVENUMBER, :CEMETERY + '' as CEMETERY, :CONCERNEDNAME + '' as CONCERNEDNAME, :DEPTEXT01 + '' as DEPTEXT01, :rechtentot + '' as rechtentot from obj
+Base=RESTERMINFO
+[Parameters-3]
+GRAVENUMBER=STRING|
+CEMETERY=STRING|
+CONCERNEDNAME=STRING|
+DEPTEXT01=STRING|
+rechtentot=STRING|
+
+[Authorization]
+Code=3CA1C5CF

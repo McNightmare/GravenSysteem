@@ -1,0 +1,12 @@
+[Report]
+Name=Statistiek Aantal overledenen per jaar
+TemplateName=Statistiek Aantal overledenen per jaar.rtf
+SQLCompatibility=MSAccess
+
+[Query-0]
+SQL=SELECT MID(SBJOVLDAT,1,4) AS Year, Count(SBJ.SBJIDN) AS Num FROM SBJ, OBJ WHERE (((SBJ.SBJOVLDAT) Is Not Null)) AND SBJ.SBJIDN=obj.OBJSBJIDN GROUP BY MID(SBJOVLDAT,1,4) ORDER BY MID(SBJOVLDAT,1,4)
+Base=SBJ
+
+[Authorization]
+Code=3CA1C5CF
+

@@ -1,0 +1,22 @@
+[Report]
+Name=Lijst van overledenen met Rechthebbenden
+TemplateName=Lijst van overledenen met  Rechthebbenden.rtf
+SQLCompatibility=MSAccess,Oracle
+
+[Query-0]
+SQL=SELECT SBJ.*, OBJ.*, PLC.*, BGP.*, Trim(Mid(ovl.sbjovldat,7,2)&'-'&Mid(ovl.sbjovldat,5,2)&'-'&Mid(ovl.sbjovldat,1,4)) as ovldat2, OVL.SBJOVLDAT AS OVLDAT FROM SBJ, OBJ, PLC, SBJ BGP, SBJ OVL WHERE SBJ.SBJIDN=OBJRHBIDN AND BGP.SBJIDN = :PLCBGPIDN AND OBJPLCIDN=PLCIDN AND OVL.SBJIDN = OBJSBJIDN AND OVL.SBJOVLDAT >= :DATVAN AND OVL.SBJOVLDAT <= :DATTEM ORDER BY OBJNAM
+Base=SBJ
+
+[Parameters-0]
+PLCBGPIDN=STRINGCOMBOBOX|Begraafplaats
+DATVAN=DATENUM|Overlijdensdatum vanaf
+DATTEM=DATENUM|Overlijdensdatum tot en met 
+
+[PLCBGPIDN]
+TableName=SBJ, SBK WHERE SBKSBJIDN=SBJIDN AND SBKSBTIDN='BGP'
+ValueFieldName=SBJIDN
+NameFieldName=SBJNAM
+OrderFieldName=SBJNAM
+
+[Authorization]
+Code=3CA1C5CF

@@ -48,7 +48,7 @@
             this.barButtonStandardSummary = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonAddSubject = new DevExpress.XtraBars.BarButtonItem();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.menuSubject = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonGraveyard = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonFuneralGuy = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonIntrested = new DevExpress.XtraBars.BarButtonItem();
@@ -62,14 +62,11 @@
             this.ribbonPageGroupReports = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonGroupStandard = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.popupMenu3 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.popupMenu4 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.menuPerGrave = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuSubject)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuPerGrave)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonStatusBar
@@ -105,15 +102,16 @@
             this.barButtonIntrested,
             this.barButtonSupplier,
             this.barButtonDeceased,
-            this.barButtonRightfulclaimant});
+            this.barButtonRightfulclaimant,
+            this.barSubItem1});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 7;
+            this.ribbon.MaxItemId = 9;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonSubject,
             this.ribbonReports});
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbon.Size = new System.Drawing.Size(1089, 144);
+            this.ribbon.Size = new System.Drawing.Size(1089, 143);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // barButtonAddDeceased
@@ -212,9 +210,11 @@
             this.barButtonReportsPerGrave.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonReportsPerGrave.Caption = "Per Graf";
             this.barButtonReportsPerGrave.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonReportsPerGrave.DropDownControl = this.menuPerGrave;
             this.barButtonReportsPerGrave.Id = 19;
             this.barButtonReportsPerGrave.Name = "barButtonReportsPerGrave";
             this.barButtonReportsPerGrave.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonReportsPerGrave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonReportsPerGrave_ItemClick);
             // 
             // barButtonReportsPerDeceased
             // 
@@ -267,23 +267,23 @@
             this.barButtonAddSubject.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonAddSubject.Caption = "Subject";
             this.barButtonAddSubject.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.barButtonAddSubject.DropDownControl = this.popupMenu1;
+            this.barButtonAddSubject.DropDownControl = this.menuSubject;
             this.barButtonAddSubject.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonAddSubject.Glyph")));
             this.barButtonAddSubject.Id = 26;
             this.barButtonAddSubject.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonAddSubject.LargeGlyph")));
             this.barButtonAddSubject.Name = "barButtonAddSubject";
             this.barButtonAddSubject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // popupMenu1
+            // menuSubject
             // 
-            this.popupMenu1.ItemLinks.Add(this.barButtonGraveyard);
-            this.popupMenu1.ItemLinks.Add(this.barButtonFuneralGuy);
-            this.popupMenu1.ItemLinks.Add(this.barButtonIntrested);
-            this.popupMenu1.ItemLinks.Add(this.barButtonSupplier);
-            this.popupMenu1.ItemLinks.Add(this.barButtonDeceased);
-            this.popupMenu1.ItemLinks.Add(this.barButtonRightfulclaimant);
-            this.popupMenu1.Name = "popupMenu1";
-            this.popupMenu1.Ribbon = this.ribbon;
+            this.menuSubject.ItemLinks.Add(this.barButtonGraveyard);
+            this.menuSubject.ItemLinks.Add(this.barButtonFuneralGuy);
+            this.menuSubject.ItemLinks.Add(this.barButtonIntrested);
+            this.menuSubject.ItemLinks.Add(this.barButtonSupplier);
+            this.menuSubject.ItemLinks.Add(this.barButtonDeceased);
+            this.menuSubject.ItemLinks.Add(this.barButtonRightfulclaimant);
+            this.menuSubject.Name = "menuSubject";
+            this.menuSubject.Ribbon = this.ribbon;
             // 
             // barButtonGraveyard
             // 
@@ -380,25 +380,21 @@
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(0, 144);
+            this.pnlMain.Location = new System.Drawing.Point(0, 143);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1089, 420);
+            this.pnlMain.Size = new System.Drawing.Size(1089, 421);
             this.pnlMain.TabIndex = 1;
             // 
-            // popupMenu2
+            // menuPerGrave
             // 
-            this.popupMenu2.Name = "popupMenu2";
-            this.popupMenu2.Ribbon = this.ribbon;
+            this.menuPerGrave.Name = "menuPerGrave";
+            this.menuPerGrave.Ribbon = this.ribbon;
             // 
-            // popupMenu3
+            // barSubItem1
             // 
-            this.popupMenu3.Name = "popupMenu3";
-            this.popupMenu3.Ribbon = this.ribbon;
-            // 
-            // popupMenu4
-            // 
-            this.popupMenu4.Name = "popupMenu4";
-            this.popupMenu4.Ribbon = this.ribbon;
+            this.barSubItem1.Caption = "barSubItem1";
+            this.barSubItem1.Id = 8;
+            this.barSubItem1.Name = "barSubItem1";
             // 
             // frmMain
             // 
@@ -414,10 +410,8 @@
             this.Text = "Gravenadministratie - v0.1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuSubject)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuPerGrave)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,15 +444,14 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonAddSubject;
         private System.Windows.Forms.Panel pnlMain;
-        private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraBars.PopupMenu menuSubject;
         private DevExpress.XtraBars.BarButtonItem barButtonGraveyard;
         private DevExpress.XtraBars.BarButtonItem barButtonFuneralGuy;
         private DevExpress.XtraBars.BarButtonItem barButtonIntrested;
         private DevExpress.XtraBars.BarButtonItem barButtonSupplier;
         private DevExpress.XtraBars.BarButtonItem barButtonDeceased;
         private DevExpress.XtraBars.BarButtonItem barButtonRightfulclaimant;
-        private DevExpress.XtraBars.PopupMenu popupMenu2;
-        private DevExpress.XtraBars.PopupMenu popupMenu3;
-        private DevExpress.XtraBars.PopupMenu popupMenu4;
+        private DevExpress.XtraBars.PopupMenu menuPerGrave;
+        private DevExpress.XtraBars.BarSubItem barSubItem1;
     }
 }

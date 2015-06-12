@@ -1,0 +1,21 @@
+[Report]
+Name=Lijst grafbezetting
+TemplateName=Lijst Grafbezetting.rtf
+SQLCompatibility=MSAccess
+
+[Query-0]
+SQL=SELECT VRIJEGRAVEN.*, Trim(MID(VERVALDATUM,7,2)&'-'&MID(VERVALDATUM,5,2)&'-'&MID(VERVALDATUM,1,4)) as vrvdat from VRIJEGRAVEN WHERE plcbgpidn=:PLCBGPIDN
+
+Base=PLC
+[Parameters-0]
+PLCBGPIDN=STRINGCOMBOBOX|Begraafplaats
+
+[PLCBGPIDN]
+TableName=SBJ, SBK WHERE SBKSBJIDN=SBJIDN AND SBKSBTIDN='BGP'
+ValueFieldName=SBJIDN
+NameFieldName=SBJNAM
+OrderFieldName=SBJNAM
+
+[Authorization]
+Code=3CA1C5CF
+
