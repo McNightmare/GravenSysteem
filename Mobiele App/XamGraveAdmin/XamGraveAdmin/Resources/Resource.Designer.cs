@@ -28,6 +28,28 @@ namespace XamGraveAdmin
 		{
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f050002
+			public const int deceasedArray = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int graveArray = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int subjectArray = 2131034112;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -45,10 +67,16 @@ namespace XamGraveAdmin
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int Active = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int monoandroidsplash = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int Nonactive = 2130837507;
 			
 			static Drawable()
 			{
@@ -63,8 +91,32 @@ namespace XamGraveAdmin
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int MyButton = 2131099648;
+			// aapt resource value: 0x7f070006
+			public const int btnLogin = 2131165190;
+			
+			// aapt resource value: 0x7f070005
+			public const int edPass = 2131165189;
+			
+			// aapt resource value: 0x7f070003
+			public const int edUser = 2131165187;
+			
+			// aapt resource value: 0x7f070008
+			public const int layoutSearch = 2131165192;
+			
+			// aapt resource value: 0x7f070001
+			public const int linearLayout1 = 2131165185;
+			
+			// aapt resource value: 0x7f070007
+			public const int scrollSearch = 2131165191;
+			
+			// aapt resource value: 0x7f070004
+			public const int txtPass = 2131165188;
+			
+			// aapt resource value: 0x7f070002
+			public const int txtUser = 2131165186;
+			
+			// aapt resource value: 0x7f070000
+			public const int txtWelcome = 2131165184;
 			
 			static Id()
 			{
@@ -80,7 +132,13 @@ namespace XamGraveAdmin
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int login = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int search = 2130903042;
 			
 			static Layout()
 			{
@@ -96,10 +154,28 @@ namespace XamGraveAdmin
 		{
 			
 			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			public const int app_name = 2130968577;
 			
 			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			public const int hello = 2130968576;
+			
+			// aapt resource value: 0x7f040007
+			public const int loginBtn = 2130968583;
+			
+			// aapt resource value: 0x7f040004
+			public const int loginTxt = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int passTxt = 2130968581;
+			
+			// aapt resource value: 0x7f040002
+			public const int searchType = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int search_button = 2130968579;
+			
+			// aapt resource value: 0x7f040006
+			public const int welcomeTxt = 2130968582;
 			
 			static String()
 			{
@@ -114,8 +190,8 @@ namespace XamGraveAdmin
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int Mono_Android_Theme_Splash = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int Mono_Android_Theme_Splash = 2131099648;
 			
 			static Style()
 			{

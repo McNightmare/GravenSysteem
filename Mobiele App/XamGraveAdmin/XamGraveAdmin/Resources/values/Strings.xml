@@ -1,5 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">XamGraveAdmin</string>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">XamGraveAdmin</string>
+	<string name="searchType">Selecteer manier van zoeken</string>
+	<string name="search_button">search</string>
+  <string name="loginTxt">Username</string>
+  <string name="passTxt">Password</string>
+  <string name="welcomeTxt">Grave Admin System</string>
+  <string name="loginBtn">Log in</string>
+	<string-array name="subjectArray">
+		<item>postcode</item>
+		<item>straat</item>
+		<item>geboortedatum</item>
+		<item>overledene</item>
+		<item>naam</item>
+		<item>bsn/sofi-nummer</item>
+		<item>a-nummer</item>
+		<item>subjectcode</item>
+		<item>advanced</item>
+	</string-array>
+	<string-array name="graveArray">
+		<item>begraafplaats</item>
+		<item>locatie</item>
+		<item>rechthebende</item>
+		<item>overledene</item>
+		<item>gereserveerd</item>
+	</string-array>
+	<string-array name="deceasedArray">
+		<item>overledene naam</item>
+		<item>begraafplaats</item>
+		<item>herkenningssteentje</item>
+		<item>belanghebbende</item>
+	</string-array>
 </resources>

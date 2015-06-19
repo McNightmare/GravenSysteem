@@ -1,4 +1,5 @@
 ﻿using System;
+
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -8,24 +9,31 @@ using Android.OS;
 
 namespace XamGraveAdmin
 {
-    [Activity(Label = "XamGraveAdmin", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
-    {
-        int count = 1;
+	[Activity (Label = "Grave Admin", Icon = "@drawable/icon")]
+	public class MainActivity : TabActivity
+	{
 
-        protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
+		protected override void OnCreate (Bundle bundle)
+		{
+			base.OnCreate (bundle);
+			// Set our view from the "main" layout resource
+			RequestWindowFeature(WindowFeatures.NoTitle);
+			SetContentView (Resource.Layout.Main);
 
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+			CreateTab(typeof(SubjectActivity), "subject", "Subject");
+			CreateTab (typeof(GraveActivity), "grave", "Graven");
+			CreateTab (typeof(DeceasedActivity), "deceased", "Overledene");
+		}
+		private void CreateTab(Type activityType, string tag, string label)
+		{
+			Intent intent = new Intent(this, activityType);
+			intent.AddFlags(ActivityFlags.NewTask);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+			TabHost.TabSpec spec = TabHost.NewTabSpec(tag);
+			spec.SetIndicator(label);
+			spec.SetContent(intent);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
-        }
-    }
+			TabHost.AddTab(spec);
+		}
+	}
 }
-
