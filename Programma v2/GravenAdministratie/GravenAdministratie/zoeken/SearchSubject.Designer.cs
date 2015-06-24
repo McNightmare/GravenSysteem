@@ -1,6 +1,6 @@
 ﻿namespace GravenAdministratie.zoeken
 {
-    partial class SearchSubject
+    partial class searchSubject
     {
         /// <summary>
         /// Required designer variable.
@@ -45,41 +45,41 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
             this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             this.xtraTabPage9 = new DevExpress.XtraTab.XtraTabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dateEdit4 = new DevExpress.XtraEditors.DateEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dateEdit4 = new DevExpress.XtraEditors.DateEdit();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -97,10 +97,10 @@
             this.xtraTabPage7.SuspendLayout();
             this.xtraTabPage8.SuspendLayout();
             this.xtraTabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // xtraTabControl1
@@ -265,6 +265,22 @@
             this.xtraTabPage4.Size = new System.Drawing.Size(1087, 135);
             this.xtraTabPage4.Text = "Overledene";
             // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(169, 75);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(423, 21);
+            this.textBox6.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(127, 75);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(34, 13);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Naam";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -319,6 +335,38 @@
             this.xtraTabPage5.Size = new System.Drawing.Size(1087, 135);
             this.xtraTabPage5.Text = "Naam";
             // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(83, 82);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(492, 21);
+            this.textBox8.TabIndex = 3;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(83, 34);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(430, 21);
+            this.textBox7.TabIndex = 2;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(33, 85);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(37, 13);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Straat";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(36, 37);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Naam";
+            // 
             // xtraTabPage6
             // 
             this.xtraTabPage6.Controls.Add(this.textBox9);
@@ -326,6 +374,22 @@
             this.xtraTabPage6.Name = "xtraTabPage6";
             this.xtraTabPage6.Size = new System.Drawing.Size(1087, 135);
             this.xtraTabPage6.Text = "BSN/Sofi-Nummer";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(138, 26);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(155, 21);
+            this.textBox9.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(42, 29);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(90, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "BSN/Sofi-nummer";
             // 
             // xtraTabPage7
             // 
@@ -335,6 +399,22 @@
             this.xtraTabPage7.Size = new System.Drawing.Size(1087, 135);
             this.xtraTabPage7.Text = "A-nummer";
             // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(94, 22);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(166, 21);
+            this.textBox10.TabIndex = 1;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(32, 25);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 13);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "A-nummer";
+            // 
             // xtraTabPage8
             // 
             this.xtraTabPage8.Controls.Add(this.label14);
@@ -342,6 +422,22 @@
             this.xtraTabPage8.Name = "xtraTabPage8";
             this.xtraTabPage8.Size = new System.Drawing.Size(1087, 135);
             this.xtraTabPage8.Text = "Subjectcode";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(36, 28);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(66, 13);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Subjectcode";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(108, 25);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(141, 21);
+            this.textBox11.TabIndex = 0;
             // 
             // xtraTabPage9
             // 
@@ -361,6 +457,108 @@
             this.xtraTabPage9.Size = new System.Drawing.Size(1087, 135);
             this.xtraTabPage9.Text = "Advanced";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(416, 88);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(37, 13);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "Straat";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(402, 62);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(51, 13);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "Postcode";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(418, 33);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(34, 13);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Naam";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(485, 86);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(567, 21);
+            this.textBox16.TabIndex = 8;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(485, 58);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(567, 21);
+            this.textBox15.TabIndex = 7;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(485, 30);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(567, 21);
+            this.textBox14.TabIndex = 6;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(135, 86);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(130, 21);
+            this.textBox13.TabIndex = 5;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(44, 86);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(68, 13);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "BSN-nummer";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(135, 58);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(130, 21);
+            this.textBox12.TabIndex = 3;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(69, 58);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(43, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Subject";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(30, 33);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(82, 13);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Geboortedatum";
+            // 
+            // dateEdit4
+            // 
+            this.dateEdit4.EditValue = null;
+            this.dateEdit4.Location = new System.Drawing.Point(135, 30);
+            this.dateEdit4.Name = "dateEdit4";
+            this.dateEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.dateEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit4.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit4.Size = new System.Drawing.Size(130, 22);
+            this.dateEdit4.TabIndex = 0;
+            // 
             // gridControl1
             // 
             this.gridControl1.Location = new System.Drawing.Point(12, 163);
@@ -376,205 +574,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(127, 75);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(34, 13);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Naam";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(169, 75);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(423, 21);
-            this.textBox6.TabIndex = 5;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(36, 37);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 13);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Naam";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(33, 85);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 13);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Straat";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(83, 34);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(430, 21);
-            this.textBox7.TabIndex = 2;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(83, 82);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(492, 21);
-            this.textBox8.TabIndex = 3;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(42, 29);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(90, 13);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "BSN/Sofi-nummer";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(138, 26);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(155, 21);
-            this.textBox9.TabIndex = 1;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(32, 25);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 13);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "A-nummer";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(94, 22);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(166, 21);
-            this.textBox10.TabIndex = 1;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(108, 25);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(141, 21);
-            this.textBox11.TabIndex = 0;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(36, 28);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 13);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Subjectcode";
-            // 
-            // dateEdit4
-            // 
-            this.dateEdit4.EditValue = null;
-            this.dateEdit4.Location = new System.Drawing.Point(135, 30);
-            this.dateEdit4.Name = "dateEdit4";
-            this.dateEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.dateEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit4.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit4.Size = new System.Drawing.Size(130, 22);
-            this.dateEdit4.TabIndex = 0;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(30, 33);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 13);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Geboortedatum";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(69, 58);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(43, 13);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Subject";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(135, 58);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(130, 21);
-            this.textBox12.TabIndex = 3;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(44, 86);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(68, 13);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "BSN-nummer";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(135, 86);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(130, 21);
-            this.textBox13.TabIndex = 5;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(485, 30);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(567, 21);
-            this.textBox14.TabIndex = 6;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(485, 58);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(567, 21);
-            this.textBox15.TabIndex = 7;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(485, 86);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(567, 21);
-            this.textBox16.TabIndex = 8;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(418, 33);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(34, 13);
-            this.label18.TabIndex = 9;
-            this.label18.Text = "Naam";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(402, 62);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(51, 13);
-            this.label19.TabIndex = 10;
-            this.label19.Text = "Postcode";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(416, 88);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(37, 13);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "Straat";
-            // 
-            // SearchSubject
+            // searchSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -582,7 +582,7 @@
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.gridControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SearchSubject";
+            this.Name = "searchSubject";
             this.Text = "SearchSubject";
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
@@ -610,10 +610,10 @@
             this.xtraTabPage8.PerformLayout();
             this.xtraTabPage9.ResumeLayout(false);
             this.xtraTabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

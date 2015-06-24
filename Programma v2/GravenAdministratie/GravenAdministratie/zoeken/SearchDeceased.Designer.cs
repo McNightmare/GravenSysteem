@@ -1,6 +1,6 @@
 ﻿namespace GravenAdministratie.zoeken
 {
-    partial class SearchDeceased
+    partial class searchDeceased
     {
         /// <summary>
         /// Required designer variable.

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using GravenAdministratie.zoeken;
-using System.IO;
+using GravenAdministratie.Toevoegen;
 
 namespace GravenAdministratie
 {
@@ -21,20 +21,19 @@ namespace GravenAdministratie
             barButtonAddSubject.AllowDrawArrow = false;
         }
 
-        private void barButtonGraveyard_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //toevoegen begraafplaats
-        }
-
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
+        private void barButtonGraveyard_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CreateForm(new addSubGraveyard());
+        }
+
         private void barButtonAddGrave_ItemClick(object sender, ItemClickEventArgs e)
         {
             CreateForm(new addGrave());
-
         }
 
         private void barButtonRightfulclaimant_ItemClick(object sender, ItemClickEventArgs e)
@@ -49,22 +48,57 @@ namespace GravenAdministratie
 
         private void barButtonSearchSubject_ItemClick(object sender, ItemClickEventArgs e)
         {
-            CreateForm(new SearchSubject());
+            CreateForm(new searchSubject());
         }
 
         private void barButtonSearchDeceased_ItemClick(object sender, ItemClickEventArgs e)
         {
-            CreateForm(new SearchDeceased());
+            CreateForm(new searchDeceased());
         }
 
         private void barButtonSearchGrave_ItemClick(object sender, ItemClickEventArgs e)
         {
-            CreateForm(new SearchGrave());
+            CreateForm(new searchGrave());
         }
 
         private void barButtonDeceased_ItemClick(object sender, ItemClickEventArgs e)
         {
             CreateForm(new addDeceased());
+        }
+
+        private void barButtonAddDeceased_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CreateForm(new AddGraveyard());
+        }
+
+        private void barButtonAddDocument_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CreateForm(new addDocument());
+        }
+
+        private void barButtonAddArticle_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CreateForm(new addArticle());
+        }
+
+        private void barButtonSearchDocument_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CreateForm(new searchDocument());
+        }
+
+        private void barButtonSearchArticle_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CreateForm(new searchArticle());
+        }
+
+        private void barButtonFuneralGuy_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CreateForm(new addFuneralEnt());
+        }
+
+        private void barButtonIntrested_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CreateForm(new addInterested());
         }
 
         private void CreateForm(Form form)
@@ -74,37 +108,6 @@ namespace GravenAdministratie
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(form);
             form.Show();
-        }
-
-        private void barButtonReportsPerGrave_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            string filepath = Directory.GetCurrentDirectory() + @"\Rapporten\Access\Rapporten per graf";
-            DirectoryInfo d = new DirectoryInfo(filepath);
-
-
-            if (menuPerGrave.ItemLinks.Count > 0)
-            {
-                foreach (var file in d.GetFiles("*.rtf"))
-                {
-
-                    menuPerGrave.AddItem(new BarButtonItem(menuPerGrave.Manager, file.Name));
-
-                }
-            }
-            else
-            {
-                foreach (var file in d.GetFiles("*.rtf"))
-                {
-                    for (int i = 0; i < menuPerGrave.ItemLinks.Count; i++)
-                    {
-                        if (file.Name != menuPerGrave.ItemLinks[i].Data)
-                        {
-                            menuPerGrave.AddItem(new BarButtonItem(menuPerGrave.Manager, file.Name));
-
-                        }
-                    }
-                }
-            }
         }
     }
 }

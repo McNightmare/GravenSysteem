@@ -33,46 +33,46 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v15.1">
+    <Reference Include="DevExpress.BonusSkins.v14.2">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Data.v15.1">
+    <Reference Include="DevExpress.Data.v14.2">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Utils.v15.1">
+    <Reference Include="DevExpress.Utils.v14.2">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Sparkline.v15.1.Core">
+    <Reference Include="DevExpress.Sparkline.v14.2.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v15.1">
+    <Reference Include="DevExpress.XtraEditors.v14.2">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -89,17 +89,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Toevoegen\addArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toevoegen\addArticle.Designer.cs">
+      <DependentUpon>addArticle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Toevoegen\addDeceased.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Toevoegen\addDeceased.Designer.cs">
       <DependentUpon>addDeceased.cs</DependentUpon>
     </Compile>
-    <Compile Include="Toevoegen\AddDelevirer.cs">
+    <Compile Include="Toevoegen\addDelevirer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Toevoegen\AddDelevirer.Designer.cs">
-      <DependentUpon>AddDelevirer.cs</DependentUpon>
+    <Compile Include="Toevoegen\addDelevirer.Designer.cs">
+      <DependentUpon>addDelevirer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toevoegen\addDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toevoegen\addDocument.Designer.cs">
+      <DependentUpon>addDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toevoegen\addFuneralEnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toevoegen\addFuneralEnt.Designer.cs">
+      <DependentUpon>addFuneralEnt.cs</DependentUpon>
     </Compile>
     <Compile Include="Toevoegen\addGrave.cs">
       <SubType>Form</SubType>
@@ -107,11 +125,17 @@
     <Compile Include="Toevoegen\addGrave.Designer.cs">
       <DependentUpon>addGrave.cs</DependentUpon>
     </Compile>
-    <Compile Include="Toevoegen\AddGraveyard.cs">
+    <Compile Include="Toevoegen\addGraveyard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Toevoegen\AddGraveyard.Designer.cs">
-      <DependentUpon>AddGraveyard.cs</DependentUpon>
+    <Compile Include="Toevoegen\addGraveyard.Designer.cs">
+      <DependentUpon>addGraveyard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toevoegen\addInterested.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toevoegen\addInterested.Designer.cs">
+      <DependentUpon>addInterested.cs</DependentUpon>
     </Compile>
     <Compile Include="Toevoegen\addRightfull.cs">
       <SubType>Form</SubType>
@@ -133,35 +157,65 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="zoeken\SearchDeceased.cs">
+    <Compile Include="Toevoegen\addSubGraveyard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="zoeken\SearchDeceased.Designer.cs">
-      <DependentUpon>SearchDeceased.cs</DependentUpon>
+    <Compile Include="Toevoegen\addSubGraveyard.Designer.cs">
+      <DependentUpon>addSubGraveyard.cs</DependentUpon>
     </Compile>
-    <Compile Include="zoeken\SearchGrave.cs">
+    <Compile Include="zoeken\searchArticle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="zoeken\SearchGrave.Designer.cs">
-      <DependentUpon>SearchGrave.cs</DependentUpon>
+    <Compile Include="zoeken\searchArticle.Designer.cs">
+      <DependentUpon>searchArticle.cs</DependentUpon>
     </Compile>
-    <Compile Include="zoeken\SearchSubject.cs">
+    <Compile Include="zoeken\searchDeceased.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="zoeken\SearchSubject.Designer.cs">
-      <DependentUpon>SearchSubject.cs</DependentUpon>
+    <Compile Include="zoeken\searchDeceased.Designer.cs">
+      <DependentUpon>searchDeceased.cs</DependentUpon>
     </Compile>
+    <Compile Include="zoeken\searchDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zoeken\searchDocument.Designer.cs">
+      <DependentUpon>searchDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zoeken\searchGrave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zoeken\searchGrave.Designer.cs">
+      <DependentUpon>searchGrave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zoeken\searchSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zoeken\searchSubject.Designer.cs">
+      <DependentUpon>searchSubject.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Toevoegen\addArticle.resx">
+      <DependentUpon>addArticle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Toevoegen\addDeceased.resx">
       <DependentUpon>addDeceased.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Toevoegen\AddDelevirer.resx">
-      <DependentUpon>AddDelevirer.cs</DependentUpon>
+    <EmbeddedResource Include="Toevoegen\addDelevirer.resx">
+      <DependentUpon>addDelevirer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toevoegen\addDocument.resx">
+      <DependentUpon>addDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toevoegen\addFuneralEnt.resx">
+      <DependentUpon>addFuneralEnt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Toevoegen\addGrave.resx">
       <DependentUpon>addGrave.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Toevoegen\AddGraveyard.resx">
-      <DependentUpon>AddGraveyard.cs</DependentUpon>
+    <EmbeddedResource Include="Toevoegen\addGraveyard.resx">
+      <DependentUpon>addGraveyard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toevoegen\addInterested.resx">
+      <DependentUpon>addInterested.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Toevoegen\addRightfull.resx">
       <DependentUpon>addRightfull.cs</DependentUpon>
@@ -182,14 +236,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="zoeken\SearchDeceased.resx">
-      <DependentUpon>SearchDeceased.cs</DependentUpon>
+    <EmbeddedResource Include="Toevoegen\addSubGraveyard.resx">
+      <DependentUpon>addSubGraveyard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="zoeken\SearchGrave.resx">
-      <DependentUpon>SearchGrave.cs</DependentUpon>
+    <EmbeddedResource Include="zoeken\searchArticle.resx">
+      <DependentUpon>searchArticle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="zoeken\SearchSubject.resx">
-      <DependentUpon>SearchSubject.cs</DependentUpon>
+    <EmbeddedResource Include="zoeken\searchDeceased.resx">
+      <DependentUpon>searchDeceased.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zoeken\searchDocument.resx">
+      <DependentUpon>searchDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zoeken\searchGrave.resx">
+      <DependentUpon>searchGrave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zoeken\searchSubject.resx">
+      <DependentUpon>searchSubject.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -200,144 +263,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Rapporten\Access\Akte van overschrijving graf.rpt_42038,5748138426.rtf" />
-    <None Include="Rapporten\Access\Akte van overschrijving graf.rpt_42039,3839626505.rtf" />
-    <None Include="Rapporten\Access\Brief ophalen grafsteen gedenkteken.rpt_42109,4097768981.rtf" />
-    <None Include="Rapporten\Access\Facturen\Eigen Factuuragp.rpt" />
-    <None Include="Rapporten\Access\Facturen\Eigen Factuuragp.rtf" />
-    <None Include="Rapporten\Access\Facturen\FactBM.rpt" />
-    <None Include="Rapporten\Access\Facturen\FactBM.rtf" />
-    <None Include="Rapporten\Access\Facturen\Factuur 2.rpt" />
-    <None Include="Rapporten\Access\Facturen\Factuur 2.rtf" />
-    <None Include="Rapporten\Access\Facturen\Factuur.rpt" />
-    <None Include="Rapporten\Access\Facturen\Factuur.rtf" />
-    <None Include="Rapporten\Access\Facturen\FactuurBM.rpt" />
-    <None Include="Rapporten\Access\Facturen\FactuurBM.rtf" />
-    <None Include="Rapporten\Access\Facturen\FactuurBO.rpt" />
-    <None Include="Rapporten\Access\Facturen\FactuurBO.rtf" />
-    <None Include="Rapporten\Access\Facturen\Grafsteenvergunning - Factuur.rpt" />
-    <None Include="Rapporten\Access\Facturen\Grafsteenvergunning - Factuur.rtf" />
-    <None Include="Rapporten\Access\Facturen\Nota grafrechten.rpt" />
-    <None Include="Rapporten\Access\Facturen\Nota grafrechten.rtf" />
-    <None Include="Rapporten\Access\Facturen\_Factuur.rpt" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42096,4948444676.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42097,4233710417.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42108,3769908333.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42108,3786392477.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42108,3860623611.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42108,3912783333.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42108,488311875.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42108,4959522801.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42108,4996975694.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42108,6722884491.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,3843999306.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,3884671875.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,3976456366.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,4058425926.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,4106099884.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,4117733102.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,4185213889.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,4221575926.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving 2.rpt_42109,4449500231.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving.rpt_42096,4557481944.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging incidentele aanschrijving.rpt_42096,4587805787.rtf" />
-    <None Include="Rapporten\Access\Grafverlenging massale aanschrijving.rpt_42108,4933252894.rtf" />
-    <None Include="Rapporten\Access\Rapporten per graf\Brief wel verl grafrechten 2.rpt" />
-    <None Include="Rapporten\Access\Rapporten per graf\Brief wel verl grafrechten 2.rtf" />
-    <None Include="Rapporten\Access\Rapporten per graf\Brief wel verl grafrechten.rpt" />
-    <None Include="Rapporten\Access\Rapporten per graf\Brief wel verl grafrechten.rtf" />
-    <None Include="Rapporten\Access\Rapporten per graf\Grafkaart- DocuBH.rpt" />
-    <None Include="Rapporten\Access\Rapporten per graf\Grafkaart- DocuBH.rtf" />
-    <None Include="Rapporten\Access\Rapporten per graf\Vergunning plaatsen gedenkteken.rpt" />
-    <None Include="Rapporten\Access\Rapporten per graf\Vergunning plaatsen gedenkteken.rtf" />
-    <None Include="Rapporten\Access\Rapporten per graf\Verlenging grafrecht.rpt" />
-    <None Include="Rapporten\Access\Rapporten per graf\Verlenging grafrecht.rtf" />
-    <None Include="Rapporten\Access\Rapporten per overledene\begraafrecht.rpt" />
-    <None Include="Rapporten\Access\Rapporten per overledene\begraafrecht.rtf" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC16 - aanvraag verlenging vergunning gedenksteen.rpt" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC16 - aanvraag verlenging vergunning gedenksteen.rtf" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC18 - verlof tot begraving-verbranding.rpt" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC18 - verlof tot begraving-verbranding.rtf" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC23 - akte van eigen urnennis.rpt" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC23 - akte van eigen urnennis.rtf" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC25 - bereidverklaring asbus ontvangen.rpt" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC25 - bereidverklaring asbus ontvangen.rtf" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC28 - vergunning plaatsing urn+asbus.rpt" />
-    <None Include="Rapporten\Access\Rapporten per overledene\SC28 - vergunning plaatsing urn+asbus.rtf" />
-    <None Include="Rapporten\Access\Rapporten per subject\kennisgeving overlijden.rpt" />
-    <None Include="Rapporten\Access\Rapporten per subject\kennisgeving overlijden.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\02Akte van Overschrijving graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van overschrijving graf.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van Overschrijving graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van uitgifte eigen gereserveerd graf.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van uitgifte eigen gereserveerd graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van uitgifte eigen graf.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van uitgifte eigen graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van uitgifte urnennis columbarium.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van uitgifte urnennis columbarium.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van verlenging graf.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Akte van verlenging graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Brief ophalen grafsteen gedenkteken.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Brief ophalen grafsteen gedenkteken.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafkaarten.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafkaarten.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafverlenging incidentele aanschrijving 2.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafverlenging incidentele aanschrijving 2.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafverlenging incidentele aanschrijving.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafverlenging incidentele aanschrijving.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafverlenging incidentele aanschrijving_test_druten.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafverlenging massale aanschrijving.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Grafverlenging massale aanschrijving.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Offerte AFKOOP graf.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Offerte AFKOOP graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Plaatsing urn in eigen graf.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Plaatsing urn in eigen graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\test.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Verklaring van afstand van een graf.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Verklaring van afstand van een graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Verzoek afstand eigen graf.rpt" />
-    <None Include="Rapporten\Access\Standaard\Brieven\Verzoek afstand eigen graf.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Begraafplaatsen.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Begraafplaatsen.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Bevolkingsmutaties.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Bevolkingsmutaties.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Bezettingsgraad per Begraafplaats.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Bezettingsgraad per Begraafplaats.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Grafkaarten.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Grafkaarten.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst einde grafrecht per begraafplaats.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst einde grafrecht per begraafplaats.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst einde reservering per begraafplaats.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst einde reservering per begraafplaats.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst Grafbezetting.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst Grafbezetting.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst van overledenen met  Rechthebbenden.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst van overledenen met  Rechthebbenden.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst van vrije en vervallen Graven.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst van vrije en vervallen Graven.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst van vrije en vervallen Posities.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lijst van vrije en vervallen Posities.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lst ovl met  Rchth.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Lst ovl met  Rchth.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Overzicht overleden rechthebbenden.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Overzicht overleden rechthebbenden.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Overzicht overledenen met Rechthebbende.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Overzicht overledenen met Rechthebbende.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Overzicht overledenen.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Overzicht overledenen.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Statistiek Aantal overledenen per jaar en maand.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Statistiek Aantal overledenen per jaar en maand.rtf" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Statistiek Aantal overledenen per jaar.rpt" />
-    <None Include="Rapporten\Access\Standaard\Overzichten\Statistiek Aantal overledenen per jaar.rtf" />
-    <None Include="Rapporten\Access\Standaard\_BedrijfDetails.rtf" />
-    <None Include="Rapporten\Access\Standaard\_Grafkaart.rpt" />
-    <None Include="Rapporten\Access\Standaard\_Grafkaart.rtf" />
-    <None Include="Rapporten\Access\Standaard\_OverledeneDetails.rtf" />
-    <None Include="Rapporten\Access\Standaard\_PersoonDetails.rpt" />
-    <None Include="Rapporten\Access\Standaard\_PersoonDetails.rtf" />
-    <None Include="Rapporten\Access\Standaard\_PlaceList.rtf" />
-    <None Include="Rapporten\Access\Standaard\_SubjectList.rtf" />
-    <None Include="Rapporten\Access\Standaard\_SubjectListMulti.rtf" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace GravenAdministratie.zoeken
 {
-    public partial class searchSubject : DevExpress.XtraEditors.XtraForm
+    public partial class searchDocument : DevExpress.XtraEditors.XtraForm
     {
-        public searchSubject()
+        public searchDocument()
         {
             InitializeComponent();
         }

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace GravenAdministratie.zoeken
+namespace GravenAdministratie.Toevoegen
 {
-    public partial class searchSubject : DevExpress.XtraEditors.XtraForm
+    public partial class addArticle : DevExpress.XtraEditors.XtraForm
     {
-        public searchSubject()
+        public addArticle()
         {
             InitializeComponent();
         }
