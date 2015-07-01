@@ -43,7 +43,9 @@
             this.barButtonSearchArticle = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonReportsPerGrave = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonReportsPerDeceased = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu4 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonReportsPerSubject = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu3 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonStandardLetter = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonStandardSummary = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -55,6 +57,11 @@
             this.barButtonSupplier = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonDeceased = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonRightfulclaimant = new DevExpress.XtraBars.BarButtonItem();
+            this.barEditItempergraf = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonSubject = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonGroupAdd = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageSearch = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -62,14 +69,16 @@
             this.ribbonPageGroupReports = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonGroupStandard = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.popupMenu3 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.popupMenu4 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenu5 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenu6 = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu6)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonStatusBar
@@ -105,13 +114,18 @@
             this.barButtonIntrested,
             this.barButtonSupplier,
             this.barButtonDeceased,
-            this.barButtonRightfulclaimant});
+            this.barButtonRightfulclaimant,
+            this.barEditItempergraf,
+            this.barButtonItem2,
+            this.barButtonItem3});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 7;
+            this.ribbon.MaxItemId = 2;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonSubject,
             this.ribbonReports});
+            this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemComboBox1});
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbon.Size = new System.Drawing.Size(1249, 144);
             this.ribbon.StatusBar = this.ribbonStatusBar;
@@ -213,13 +227,8 @@
             // 
             // barButtonReportsPerGrave
             // 
-            this.barButtonReportsPerGrave.ActAsDropDown = true;
-            this.barButtonReportsPerGrave.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
-            this.barButtonReportsPerGrave.Caption = "Per Graf";
-            this.barButtonReportsPerGrave.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.barButtonReportsPerGrave.Id = 19;
+            this.barButtonReportsPerGrave.Id = 9;
             this.barButtonReportsPerGrave.Name = "barButtonReportsPerGrave";
-            this.barButtonReportsPerGrave.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // barButtonReportsPerDeceased
             // 
@@ -227,33 +236,50 @@
             this.barButtonReportsPerDeceased.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonReportsPerDeceased.Caption = "Per Overledene";
             this.barButtonReportsPerDeceased.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonReportsPerDeceased.DropDownControl = this.popupMenu4;
             this.barButtonReportsPerDeceased.Id = 20;
             this.barButtonReportsPerDeceased.Name = "barButtonReportsPerDeceased";
             this.barButtonReportsPerDeceased.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
+            // popupMenu4
+            // 
+            this.popupMenu4.Name = "popupMenu4";
+            this.popupMenu4.Ribbon = this.ribbon;
+            // 
             // barButtonReportsPerSubject
             // 
+            this.barButtonReportsPerSubject.ActAsDropDown = true;
             this.barButtonReportsPerSubject.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonReportsPerSubject.Caption = "Per Subject";
             this.barButtonReportsPerSubject.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonReportsPerSubject.DropDownControl = this.popupMenu3;
             this.barButtonReportsPerSubject.Id = 21;
             this.barButtonReportsPerSubject.Name = "barButtonReportsPerSubject";
             this.barButtonReportsPerSubject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
+            // popupMenu3
+            // 
+            this.popupMenu3.Name = "popupMenu3";
+            this.popupMenu3.Ribbon = this.ribbon;
+            // 
             // barButtonStandardLetter
             // 
+            this.barButtonStandardLetter.ActAsDropDown = true;
             this.barButtonStandardLetter.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonStandardLetter.Caption = "Brieven";
             this.barButtonStandardLetter.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonStandardLetter.DropDownControl = this.popupMenu5;
             this.barButtonStandardLetter.Id = 22;
             this.barButtonStandardLetter.Name = "barButtonStandardLetter";
             this.barButtonStandardLetter.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // barButtonStandardSummary
             // 
+            this.barButtonStandardSummary.ActAsDropDown = true;
             this.barButtonStandardSummary.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonStandardSummary.Caption = "Overzichten";
             this.barButtonStandardSummary.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonStandardSummary.DropDownControl = this.popupMenu6;
             this.barButtonStandardSummary.Id = 23;
             this.barButtonStandardSummary.Name = "barButtonStandardSummary";
             this.barButtonStandardSummary.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -332,6 +358,42 @@
             this.barButtonRightfulclaimant.Name = "barButtonRightfulclaimant";
             this.barButtonRightfulclaimant.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonRightfulclaimant_ItemClick);
             // 
+            // barEditItempergraf
+            // 
+            this.barEditItempergraf.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barEditItempergraf.Edit = this.repositoryItemComboBox1;
+            this.barEditItempergraf.Id = 7;
+            this.barEditItempergraf.Name = "barEditItempergraf";
+            // 
+            // repositoryItemComboBox1
+            // 
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.ActAsDropDown = true;
+            this.barButtonItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.barButtonItem2.Caption = "Per Graf";
+            this.barButtonItem2.DropDownControl = this.popupMenu2;
+            this.barButtonItem2.Id = 8;
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // popupMenu2
+            // 
+            this.popupMenu2.Name = "popupMenu2";
+            this.popupMenu2.Ribbon = this.ribbon;
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "test";
+            this.barButtonItem3.Id = 1;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
             // ribbonSubject
             // 
             this.ribbonSubject.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -370,9 +432,9 @@
             // 
             // ribbonPageGroupReports
             // 
-            this.ribbonPageGroupReports.ItemLinks.Add(this.barButtonReportsPerGrave);
             this.ribbonPageGroupReports.ItemLinks.Add(this.barButtonReportsPerDeceased);
             this.ribbonPageGroupReports.ItemLinks.Add(this.barButtonReportsPerSubject);
+            this.ribbonPageGroupReports.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroupReports.Name = "ribbonPageGroupReports";
             this.ribbonPageGroupReports.Text = "Rapporten";
             // 
@@ -385,6 +447,7 @@
             // 
             // pnlMain
             // 
+            this.pnlMain.AllowDrop = true;
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 144);
@@ -392,20 +455,15 @@
             this.pnlMain.Size = new System.Drawing.Size(1249, 542);
             this.pnlMain.TabIndex = 1;
             // 
-            // popupMenu2
+            // popupMenu5
             // 
-            this.popupMenu2.Name = "popupMenu2";
-            this.popupMenu2.Ribbon = this.ribbon;
+            this.popupMenu5.Name = "popupMenu5";
+            this.popupMenu5.Ribbon = this.ribbon;
             // 
-            // popupMenu3
+            // popupMenu6
             // 
-            this.popupMenu3.Name = "popupMenu3";
-            this.popupMenu3.Ribbon = this.ribbon;
-            // 
-            // popupMenu4
-            // 
-            this.popupMenu4.Name = "popupMenu4";
-            this.popupMenu4.Ribbon = this.ribbon;
+            this.popupMenu6.Name = "popupMenu6";
+            this.popupMenu6.Ribbon = this.ribbon;
             // 
             // frmMain
             // 
@@ -420,11 +478,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gravenadministratie - v0.1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -464,8 +526,14 @@
         private DevExpress.XtraBars.BarButtonItem barButtonSupplier;
         private DevExpress.XtraBars.BarButtonItem barButtonDeceased;
         private DevExpress.XtraBars.BarButtonItem barButtonRightfulclaimant;
+        private DevExpress.XtraBars.BarEditItem barEditItempergraf;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.PopupMenu popupMenu2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.PopupMenu popupMenu3;
         private DevExpress.XtraBars.PopupMenu popupMenu4;
+        private DevExpress.XtraBars.PopupMenu popupMenu5;
+        private DevExpress.XtraBars.PopupMenu popupMenu6;
     }
 }

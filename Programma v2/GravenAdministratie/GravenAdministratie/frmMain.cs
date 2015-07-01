@@ -15,6 +15,7 @@ namespace GravenAdministratie
 {
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        BarManager manage = new BarManager();
         public frmMain()
         {
             InitializeComponent();
@@ -108,6 +109,32 @@ namespace GravenAdministratie
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(form);
             form.Show();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Rapporten per subject", "*.rtf", popupMenu3);
+
+            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Rapporten per graf", "*.rtf", popupMenu2);
+
+            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Rapporten per overledene", "*.rtf", popupMenu4);
+
+            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Standaard\Brieven","*.rtf",popupMenu5);
+
+            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Standaard\Overzichten","*.rtf",popupMenu6);
+        }
+
+        private void CreateDocuments(string document, string type,PopupMenu popupmenu)
+        {
+            string[] filepath = System.IO.Directory.GetFiles(document,type);
+            foreach(string file in filepath)
+            {
+                popupmenu.ItemLinks.Add(new BarButtonItem(manage, file));
+                popupmenu.Manager = manage;
+            }
+        }
+        private void OpenDocuments(PopupMenu popupmenu)
+        {
         }
     }
 }
