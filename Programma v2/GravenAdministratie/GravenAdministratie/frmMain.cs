@@ -10,12 +10,14 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using GravenAdministratie.zoeken;
 using GravenAdministratie.Toevoegen;
+using System.Diagnostics;
 
 namespace GravenAdministratie
 {
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         BarManager manage = new BarManager();
+
         public frmMain()
         {
             InitializeComponent();
@@ -119,22 +121,39 @@ namespace GravenAdministratie
 
             CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Rapporten per overledene", "*.rtf", popupMenu4);
 
-            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Standaard\Brieven","*.rtf",popupMenu5);
+            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Standaard\Brieven", "*.rtf", popupMenu5);
 
-            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Standaard\Overzichten","*.rtf",popupMenu6);
+            CreateDocuments(@"P:\GA-HighFocus\Rapporten\Access\Standaard\Overzichten", "*.rtf", popupMenu6);
         }
 
-        private void CreateDocuments(string document, string type,PopupMenu popupmenu)
+        private void CreateDocuments(string document, string type, PopupMenu popupmenu)
         {
-            string[] filepath = System.IO.Directory.GetFiles(document,type);
-            foreach(string file in filepath)
+            string[] filepath = System.IO.Directory.GetFiles(document, type);
+            foreach (string file in filepath)
             {
-                popupmenu.ItemLinks.Add(new BarButtonItem(manage, file));
+                popupmenu.AddItem(new BarButtonItem(manage, file));
                 popupmenu.Manager = manage;
             }
         }
+
         private void OpenDocuments(PopupMenu popupmenu)
         {
+            popupmenu.Manager = manage;
+            foreach (BarButtonItemLink barbutton in popupmenu.ItemLinks)
+            {
+                barbutton.Item.ItemClick += Item_ItemClick;
+            }
+        }
+
+        void Item_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            string[] filepathe = System.IO.Directory.GetFiles(@"P:\GA-HighFocus\Rapporten\Access\Rapporten per subject", "*.rtf");
+            Process.Start(@"P:\GA-HighFocus\Rapporten\Access\Rapporten per graf\Brief wel verl grafrechten 2.rtf");
+        }
+
+        private void barButtonReportsPerDeceased_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            OpenDocuments(popupMenu4);
         }
     }
 }

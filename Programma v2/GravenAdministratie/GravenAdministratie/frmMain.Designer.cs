@@ -47,7 +47,9 @@
             this.barButtonReportsPerSubject = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu3 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonStandardLetter = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu5 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonStandardSummary = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu6 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonAddSubject = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
@@ -69,16 +71,14 @@
             this.ribbonPageGroupReports = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonGroupStandard = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.popupMenu5 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.popupMenu6 = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu6)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonStatusBar
@@ -240,6 +240,7 @@
             this.barButtonReportsPerDeceased.Id = 20;
             this.barButtonReportsPerDeceased.Name = "barButtonReportsPerDeceased";
             this.barButtonReportsPerDeceased.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonReportsPerDeceased.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonReportsPerDeceased_ItemClick);
             // 
             // popupMenu4
             // 
@@ -273,6 +274,11 @@
             this.barButtonStandardLetter.Name = "barButtonStandardLetter";
             this.barButtonStandardLetter.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
+            // popupMenu5
+            // 
+            this.popupMenu5.Name = "popupMenu5";
+            this.popupMenu5.Ribbon = this.ribbon;
+            // 
             // barButtonStandardSummary
             // 
             this.barButtonStandardSummary.ActAsDropDown = true;
@@ -283,6 +289,11 @@
             this.barButtonStandardSummary.Id = 23;
             this.barButtonStandardSummary.Name = "barButtonStandardSummary";
             this.barButtonStandardSummary.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // popupMenu6
+            // 
+            this.popupMenu6.Name = "popupMenu6";
+            this.popupMenu6.Ribbon = this.ribbon;
             // 
             // barButtonItem1
             // 
@@ -455,16 +466,6 @@
             this.pnlMain.Size = new System.Drawing.Size(1249, 542);
             this.pnlMain.TabIndex = 1;
             // 
-            // popupMenu5
-            // 
-            this.popupMenu5.Name = "popupMenu5";
-            this.popupMenu5.Ribbon = this.ribbon;
-            // 
-            // popupMenu6
-            // 
-            this.popupMenu6.Name = "popupMenu6";
-            this.popupMenu6.Ribbon = this.ribbon;
-            // 
             // frmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -482,11 +483,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
